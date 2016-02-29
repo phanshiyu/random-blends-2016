@@ -22,11 +22,17 @@
 
 </head>
 <body>
-<button class="site-menu-expand-button"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+<button class="site-menu-expand-button site-menu-button">
+	<div class="empty-container">	
+	</div>
+	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
 <div class="site-menu-wrapper">
 	<div class="site-menu">
 		<h1 class="site-menu-header">Menu</h1>
-		<button class="site-menu-collapse-button"><span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+		<button class="site-menu-collapse-button site-menu-button">
+			<div class="empty-container"></div>
+			<span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+		</button>
 	</div>
 </div>
 
@@ -62,9 +68,9 @@
 
 		oriDomi.foldUp();
 		$('.site-menu-collapse-button').click(function() {
-			oriDomi.foldUp(function() {
+			oriDomi.emptyQueue().foldUp(function() {
 				menuWrapper.hide();
-				siteMenuExpandButton.fadeIn();
+				siteMenuExpandButton.fadeIn(200);
 			});
 
 		})
@@ -72,12 +78,11 @@
 		siteMenuExpandButton.click(function () {
 			$(this).hide();
 			menuWrapper.show();
-			oriDomi.unfold(function() {
+			oriDomi.emptyQueue().unfold(function() {
 				if (!isAccordion) {
 					oriDomi.accordion(20);
 				}
 			});
-
 		})
 	});
 </script>

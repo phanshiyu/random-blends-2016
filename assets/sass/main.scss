@@ -7,6 +7,32 @@ body {
 	font-family: $default-font;
 }
 
+.site-menu-button {
+	display: inline-block;
+	text-align: center;
+	&:before{
+		content: "";
+		display: block;
+		margin-top: 100%;
+	}
+	.empty-container {
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;   
+	}
+
+	.glyphicon {
+		margin: auto;
+	    font-size: 3em;
+	    position: absolute;
+	    top: 50%;
+		transform: translate(-50%,-50%);
+		// transform: translateX(50%);
+	}
+}
+
 // Site menu
 .site-menu-expand-button {
 	width: 13%;
@@ -37,6 +63,7 @@ body {
 		}
 
 		.site-menu-collapse-button {
+			width: 15%;
 			margin: 1%;
 			color: white;
 			background-color: #a8c4c7;
