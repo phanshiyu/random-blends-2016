@@ -66,9 +66,7 @@
 
 		var oriDomi = new OriDomi('.site-menu', { touchEnabled: false });
 
-		oriDomi.foldUp(function() {
-
-		});
+		oriDomi.foldUp();
 
 		setTimeout(function(){
     		siteMenuExpandButton.fadeIn();
@@ -76,16 +74,19 @@
 		
 		$('.site-menu-collapse-button').click(function() {
 			oriDomi.foldUp(function() {
-				menuWrapper.hide();
-				siteMenuExpandButton.fadeIn(200);
+				setTimeout(function(){
+		    		menuWrapper.hide();
+					siteMenuExpandButton.fadeIn(200);
+				}, 500);
 			});
 		})
 
 		siteMenuExpandButton.click(function () {
 			$(this).hide();
-			oriDomi.foldUp();
 			menuWrapper.show();
-			oriDomi.accordion(10);
+			setTimeout(function(){
+    			oriDomi.accordion(10);
+			}, 500);
 		})
 	});
 </script>
