@@ -1,0 +1,134 @@
+/* line 6, ../sass/main.scss */
+body {
+  font-family: "Arvo", serif;
+}
+
+/* line 11, ../sass/main.scss */
+.site-menu-expand-button {
+  width: 13%;
+  color: white;
+  padding: 3%;
+  position: fixed;
+  background-color: #a8c4c7;
+  border: none;
+  outline: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* line 25, ../sass/main.scss */
+.site-menu-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+/* line 30, ../sass/main.scss */
+.site-menu-wrapper .site-menu {
+  padding: 3%;
+  width: 100%;
+  height: 100vh;
+  background-color: #768486;
+}
+/* line 39, ../sass/main.scss */
+.site-menu-wrapper .site-menu .site-menu-collapse-button {
+  margin: 1%;
+  color: white;
+  background-color: #a8c4c7;
+  border: none;
+  outline: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 55, ../sass/main.scss */
+.site-default-button {
+  color: white;
+  width: 70%;
+  font-size: 1.5em;
+  background-color: #a8c4c7;
+  border: none;
+  outline: 0;
+  padding: 4%;
+  transition: background-color 1s ease;
+}
+/* line 66, ../sass/main.scss */
+.site-default-button:hover {
+  background-color: #6f8486;
+}
+
+/* line 71, ../sass/main.scss */
+.underline:after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin: 1% auto 1% auto;
+}
+
+/* line 82, ../sass/main.scss */
+.site-content-block {
+  position: relative;
+  width: 100%;
+  background-color: #e6e5e0;
+  overflow: hidden;
+  text-align: center;
+  padding: 8% 3% 8% 3%;
+}
+
+/* line 94, ../sass/main.scss */
+#site-logo-wrapper {
+  background-color: white;
+}
+/* line 96, ../sass/main.scss */
+#site-logo-wrapper #site-logo {
+  width: 100%;
+}
+
+/* line 103, ../sass/main.scss */
+.site-mosaic-wrapper {
+  position: relative;
+  width: 280px;
+  display: block;
+  margin: 3% auto 3% auto;
+  text-align: center;
+}
+/* line 112, ../sass/main.scss */
+.site-mosaic-wrapper .site-mosaic-item {
+  width: 140px;
+  height: 140px;
+}
+/* line 117, ../sass/main.scss */
+.site-mosaic-wrapper .site-mosaic-text {
+  padding: 1%;
+  background-color: white;
+}
+/* line 123, ../sass/main.scss */
+.site-mosaic-wrapper .site-mosaic-image {
+  background-color: yellow;
+}
+/* line 128, ../sass/main.scss */
+.site-mosaic-wrapper:nth-child(odd) .site-mosaic-text {
+  float: left;
+}
+/* line 131, ../sass/main.scss */
+.site-mosaic-wrapper:nth-child(odd) .site-mosaic-image {
+  float: right;
+}
+/* line 137, ../sass/main.scss */
+.site-mosaic-wrapper:nth-child(even) .site-mosaic-text {
+  float: right;
+}
+/* line 140, ../sass/main.scss */
+.site-mosaic-wrapper:nth-child(even) .site-mosaic-image {
+  float: left;
+}
+/* line 146, ../sass/main.scss */
+.site-mosaic-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}

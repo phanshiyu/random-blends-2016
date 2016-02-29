@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+<title>Random Blends 2016</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- STYLESHEETS -->
+<!-- Boostrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<!-- Our Stylesheets -->
+<link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
+
+<!-- JAVASCRIPTS -->
+<!-- JQuery -->
+<script src="assets/javascripts/jquery-2.2.1.min.js"></script>
+<script src="assets/javascripts/oridomi.min.js"></script>
+
+<!-- Boostrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Our Javascripts -->
+
+</head>
+<body>
+<button class="site-menu-expand-button"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+<div class="site-menu-wrapper">
+	<div class="site-menu">
+		<h1 class="site-menu-header">Menu</h1>
+		<button class="site-menu-collapse-button"><span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+	</div>
+</div>
+
+<article id="site-logo-wrapper" class="site-content-block">
+	<img id="site-logo" src="assets/images/logo.png">
+	<button class="site-default-button">START</button>
+</article>
+
+<article class="site-content-block">
+	<h2 class="site-content-block-title underline">Blah blah</h2>
+	<div class="site-mosaic-wrapper">
+		<div class="site-mosaic-item site-mosaic-text"><h3 class="heading-underline">test</h3></div>
+		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
+	</div>
+	<div class="site-mosaic-wrapper">
+		<div class="site-mosaic-item site-mosaic-text">The brown fox jumps over the lazy dog.</div>
+		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
+	</div>
+	<div class="site-mosaic-wrapper">
+		<div class="site-mosaic-item site-mosaic-text">The brown fox jumps over the lazy dog.</div>
+		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
+	</div>
+</article>
+</body>
+
+<script>
+	$(document).ready(function() {		
+		var menuWrapper = $('.site-menu-wrapper');
+		var siteMenuExpandButton = $('.site-menu-expand-button');
+		var isAccordion = false;
+
+		var oriDomi = new OriDomi(document.getElementsByClassName('site-menu')[0], { touchEnabled: false });
+
+		oriDomi.foldUp();
+		$('.site-menu-collapse-button').click(function() {
+			oriDomi.foldUp(function() {
+				menuWrapper.hide();
+				siteMenuExpandButton.fadeIn();
+			});
+
+		})
+
+		siteMenuExpandButton.click(function () {
+			$(this).hide();
+			menuWrapper.show();
+			oriDomi.unfold(function() {
+				if (!isAccordion) {
+					oriDomi.accordion(20);
+				}
+			});
+
+		})
+	});
+</script>
+
+</html>
