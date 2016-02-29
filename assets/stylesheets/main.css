@@ -5,16 +5,18 @@ body {
 
 /* line 10, ../sass/main.scss */
 .site-menu-button {
+  transition: background-color 1s ease;
   display: inline-block;
   text-align: center;
+  background-color: #a8c4c7;
 }
-/* line 13, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 .site-menu-button:before {
   content: "";
   display: block;
   margin-top: 100%;
 }
-/* line 18, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .site-menu-button .empty-container {
   position: absolute;
   top: 0;
@@ -22,7 +24,7 @@ body {
   left: 0;
   right: 0;
 }
-/* line 26, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .site-menu-button .glyphicon {
   margin: auto;
   font-size: 3em;
@@ -30,14 +32,18 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+/* line 38, ../sass/main.scss */
+.site-menu-button:hover {
+  background-color: #6f8486;
+}
 
-/* line 37, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .site-menu-expand-button {
+  display: none;
   width: 13%;
   color: white;
   padding: 3%;
   position: fixed;
-  background-color: #a8c4c7;
   border: none;
   outline: 0;
   top: 0;
@@ -45,26 +51,26 @@ body {
   z-index: 1;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .site-menu-wrapper {
   display: none;
   position: fixed;
   z-index: 1;
   width: 100%;
+  text-align: center;
 }
-/* line 56, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .site-menu-wrapper .site-menu {
   padding: 3%;
   width: 100%;
   height: 100vh;
   background-color: #768486;
 }
-/* line 65, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-collapse-button {
   width: 15%;
   margin: 1%;
   color: white;
-  background-color: #a8c4c7;
   border: none;
   outline: 0;
   position: absolute;
@@ -72,7 +78,7 @@ body {
   right: 0;
 }
 
-/* line 82, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 .site-default-button {
   color: white;
   width: 70%;
@@ -83,12 +89,12 @@ body {
   padding: 4%;
   transition: background-color 1s ease;
 }
-/* line 93, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .site-default-button:hover {
   background-color: #6f8486;
 }
 
-/* line 98, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .underline:after {
   content: "";
   width: 100px;
@@ -98,7 +104,7 @@ body {
   margin: 1% auto 1% auto;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .site-content-block {
   position: relative;
   width: 100%;
@@ -108,16 +114,16 @@ body {
   padding: 8% 3% 8% 3%;
 }
 
-/* line 121, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 #site-logo-wrapper {
   background-color: white;
 }
-/* line 123, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 #site-logo-wrapper #site-logo {
   width: 100%;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .site-mosaic-wrapper {
   position: relative;
   width: 280px;
@@ -125,37 +131,37 @@ body {
   margin: 3% auto 3% auto;
   text-align: center;
 }
-/* line 139, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-item {
   width: 140px;
   height: 140px;
 }
-/* line 144, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-text {
   padding: 1%;
   background-color: white;
 }
-/* line 150, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-image {
   background-color: yellow;
 }
-/* line 155, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-text {
   float: left;
 }
-/* line 158, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-image {
   float: right;
 }
-/* line 164, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-text {
   float: right;
 }
-/* line 167, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-image {
   float: left;
 }
-/* line 173, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .site-mosaic-wrapper:after {
   content: "";
   display: table;

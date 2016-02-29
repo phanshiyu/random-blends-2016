@@ -28,7 +28,7 @@
 	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
 <div class="site-menu-wrapper">
 	<div class="site-menu">
-		<h1 class="site-menu-header">Menu</h1>
+		<h1 class="site-menu-header underline">Menu</h1>
 		<button class="site-menu-collapse-button site-menu-button">
 			<div class="empty-container"></div>
 			<span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
@@ -64,25 +64,28 @@
 		var siteMenuExpandButton = $('.site-menu-expand-button');
 		var isAccordion = false;
 
-		var oriDomi = new OriDomi(document.getElementsByClassName('site-menu')[0], { touchEnabled: false });
+		var oriDomi = new OriDomi('.site-menu', { touchEnabled: false });
 
-		oriDomi.foldUp();
+		oriDomi.foldUp(function() {
+
+		});
+
+		setTimeout(function(){
+    		siteMenuExpandButton.fadeIn();
+		}, 500);
+		
 		$('.site-menu-collapse-button').click(function() {
-			oriDomi.emptyQueue().foldUp(function() {
+			oriDomi.foldUp(function() {
 				menuWrapper.hide();
 				siteMenuExpandButton.fadeIn(200);
 			});
-
 		})
 
 		siteMenuExpandButton.click(function () {
 			$(this).hide();
+			oriDomi.foldUp();
 			menuWrapper.show();
-			oriDomi.emptyQueue().unfold(function() {
-				if (!isAccordion) {
-					oriDomi.accordion(20);
-				}
-			});
+			oriDomi.accordion(10);
 		})
 	});
 </script>

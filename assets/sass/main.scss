@@ -8,8 +8,11 @@ body {
 }
 
 .site-menu-button {
+	transition: background-color 1s ease;
 	display: inline-block;
 	text-align: center;
+	background-color: #a8c4c7;
+
 	&:before{
 		content: "";
 		display: block;
@@ -31,15 +34,20 @@ body {
 		transform: translate(-50%,-50%);
 		// transform: translateX(50%);
 	}
+
+	&:hover {
+		background-color: #6f8486;
+	}
 }
 
 // Site menu
 .site-menu-expand-button {
+	display: none;
 	width: 13%;
 	color: white;
 	padding: 3%;
 	position: fixed;
-	background-color: #a8c4c7;
+	
 	border: none;
 	outline: 0;
 
@@ -53,6 +61,7 @@ body {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
+	text-align: center;
 	.site-menu {
 		padding: 3%;
 		width: 100%;
@@ -66,7 +75,6 @@ body {
 			width: 15%;
 			margin: 1%;
 			color: white;
-			background-color: #a8c4c7;
 			border: none;
 			outline: 0;
 			position: absolute;
