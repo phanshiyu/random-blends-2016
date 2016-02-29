@@ -1,14 +1,19 @@
 $screen-width-iphone: 320px;
 $screen-height-iphone: 480px;
 $default-font: 'Arvo', serif;
+$default-button-transition: all 1s ease;
 
 // We first handle the smaller screen sizes, starting with iphone
 body {
 	font-family: $default-font;
+
+}
+a {
+	text-decoration: none !important;
 }
 
 .site-menu-button {
-	transition: background-color 1s ease;
+	transition: $default-button-transition;
 	display: inline-block;
 	text-align: center;
 	background-color: #a8c4c7;
@@ -81,6 +86,24 @@ body {
 			top: 0;
 			right: 0;
 		}
+
+		.site-menu-list {
+			list-style-type: none;
+			padding: 0;
+			height: 30vh;
+			.site-menu-item {
+				color: black;
+				transition: $default-button-transition;
+				background-color: white;
+				padding: 0.5%;
+				margin: 1%;
+
+				&.hover {
+					background-color: grey;
+					color: white;
+				}
+			}
+		}
 	}
 }
 
@@ -96,7 +119,7 @@ body {
 	border: none;
 	outline: 0;
 	padding: 4%;
-	transition: background-color 1s ease;
+	transition: $default-button-transition;
 
 	&:hover {
 		background-color: #6f8486;

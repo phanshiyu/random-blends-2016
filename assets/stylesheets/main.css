@@ -1,22 +1,27 @@
-/* line 6, ../sass/main.scss */
+/* line 7, ../sass/main.scss */
 body {
   font-family: "Arvo", serif;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 11, ../sass/main.scss */
+a {
+  text-decoration: none !important;
+}
+
+/* line 15, ../sass/main.scss */
 .site-menu-button {
-  transition: background-color 1s ease;
+  transition: all 1s ease;
   display: inline-block;
   text-align: center;
   background-color: #a8c4c7;
 }
-/* line 16, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .site-menu-button:before {
   content: "";
   display: block;
   margin-top: 100%;
 }
-/* line 21, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 .site-menu-button .empty-container {
   position: absolute;
   top: 0;
@@ -24,7 +29,7 @@ body {
   left: 0;
   right: 0;
 }
-/* line 29, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 .site-menu-button .glyphicon {
   margin: auto;
   font-size: 3em;
@@ -32,12 +37,12 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 38, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .site-menu-button:hover {
   background-color: #6f8486;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .site-menu-expand-button {
   display: none;
   width: 13%;
@@ -51,7 +56,7 @@ body {
   z-index: 1;
 }
 
-/* line 59, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .site-menu-wrapper {
   display: none;
   position: fixed;
@@ -59,14 +64,14 @@ body {
   width: 100%;
   text-align: center;
 }
-/* line 65, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .site-menu-wrapper .site-menu {
   padding: 3%;
   width: 100%;
   height: 100vh;
   background-color: #768486;
 }
-/* line 74, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-collapse-button {
   width: 15%;
   margin: 1%;
@@ -77,8 +82,27 @@ body {
   top: 0;
   right: 0;
 }
-
 /* line 90, ../sass/main.scss */
+.site-menu-wrapper .site-menu .site-menu-list {
+  list-style-type: none;
+  padding: 0;
+  height: 30vh;
+}
+/* line 94, ../sass/main.scss */
+.site-menu-wrapper .site-menu .site-menu-list .site-menu-item {
+  color: black;
+  transition: all 1s ease;
+  background-color: white;
+  padding: 0.5%;
+  margin: 1%;
+}
+/* line 101, ../sass/main.scss */
+.site-menu-wrapper .site-menu .site-menu-list .site-menu-item.hover {
+  background-color: grey;
+  color: white;
+}
+
+/* line 113, ../sass/main.scss */
 .site-default-button {
   color: white;
   width: 70%;
@@ -87,14 +111,14 @@ body {
   border: none;
   outline: 0;
   padding: 4%;
-  transition: background-color 1s ease;
+  transition: all 1s ease;
 }
-/* line 101, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .site-default-button:hover {
   background-color: #6f8486;
 }
 
-/* line 106, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .underline:after {
   content: "";
   width: 100px;
@@ -104,7 +128,7 @@ body {
   margin: 1% auto 1% auto;
 }
 
-/* line 117, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .site-content-block {
   position: relative;
   width: 100%;
@@ -114,16 +138,16 @@ body {
   padding: 8% 3% 8% 3%;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 #site-logo-wrapper {
   background-color: white;
 }
-/* line 131, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 #site-logo-wrapper #site-logo {
   width: 100%;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .site-mosaic-wrapper {
   position: relative;
   width: 280px;
@@ -131,37 +155,37 @@ body {
   margin: 3% auto 3% auto;
   text-align: center;
 }
-/* line 147, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-item {
   width: 140px;
   height: 140px;
 }
-/* line 152, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-text {
   padding: 1%;
   background-color: white;
 }
-/* line 158, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-image {
   background-color: yellow;
 }
-/* line 163, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-text {
   float: left;
 }
-/* line 166, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-image {
   float: right;
 }
-/* line 172, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-text {
   float: right;
 }
-/* line 175, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-image {
   float: left;
 }
-/* line 181, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .site-mosaic-wrapper:after {
   content: "";
   display: table;
