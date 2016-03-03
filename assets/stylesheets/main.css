@@ -92,17 +92,16 @@ a {
 .site-menu-wrapper .site-menu .site-menu-list .site-menu-item {
   color: black;
   transition: all 1s ease;
-  background-color: white;
+  width: 70%;
   padding: 0.5%;
-  margin: 1%;
+  margin: 1% auto 1% auto;
 }
-/* line 101, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-list .site-menu-item.hover {
-  background-color: grey;
   color: white;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .site-default-button {
   color: white;
   width: 70%;
@@ -113,12 +112,12 @@ a {
   padding: 4%;
   transition: all 1s ease;
 }
-/* line 124, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .site-default-button:hover {
   background-color: #6f8486;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .underline:after {
   content: "";
   width: 100px;
@@ -129,65 +128,121 @@ a {
 }
 
 /* line 140, ../sass/main.scss */
+.white-underline:after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 1% auto 1% auto;
+}
+
+/* line 151, ../sass/main.scss */
 .site-content-block {
+  color: white;
   position: relative;
   width: 100%;
-  background-color: #e6e5e0;
+  background-color: #353636;
   overflow: hidden;
   text-align: center;
   padding: 8% 3% 8% 3%;
 }
 
-/* line 152, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #site-logo-wrapper {
-  background-color: white;
+  background: url("../images/header-pic.jpg") center;
+  background-size: cover;
+  height: 100vh;
+  color: black;
 }
-/* line 154, ../sass/main.scss */
-#site-logo-wrapper #site-logo {
+/* line 170, ../sass/main.scss */
+#site-logo-wrapper #site-logo-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 175, ../sass/main.scss */
+#site-logo-wrapper #site-logo-content #site-logo {
   width: 100%;
 }
 
-/* line 161, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .site-mosaic-wrapper {
+  color: black;
   position: relative;
   width: 280px;
   display: block;
   margin: 3% auto 3% auto;
   text-align: center;
 }
-/* line 170, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-item {
   width: 140px;
   height: 140px;
 }
-/* line 175, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-text {
   padding: 1%;
   background-color: white;
 }
-/* line 181, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-image {
   background-color: yellow;
 }
-/* line 186, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-text {
   float: left;
 }
-/* line 189, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-image {
   float: right;
 }
-/* line 195, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-text {
   float: right;
 }
-/* line 198, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-image {
   float: left;
 }
-/* line 204, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 .site-mosaic-wrapper:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 236, ../sass/main.scss */
+.site-large-wrapper {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  padding: 2%;
+}
+/* line 240, ../sass/main.scss */
+.site-large-wrapper .site-large-image-wrapper {
+  overflow: hidden;
+  width: 96%;
+  height: 25vh;
+}
+/* line 244, ../sass/main.scss */
+.site-large-wrapper .site-large-image-wrapper img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+}
+/* line 257, ../sass/main.scss */
+.site-large-wrapper h3 {
+  font-size: 1.8em;
+}
+/* line 261, ../sass/main.scss */
+.site-large-wrapper h4 {
+  font-size: 1.2em;
+}
+
+/* line 268, ../sass/main.scss */
+#map {
+  width: 100%;
+  height: 80vh;
 }

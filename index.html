@@ -49,11 +49,68 @@
 </div>
 
 <article id="site-logo-wrapper" class="site-content-block">
-	<img id="site-logo" src="assets/images/logo.png">
-	<button class="site-default-button">START</button>
+	<div id="site-logo-content">
+		<img id="site-logo" src="assets/images/random-blends.jpg">
+		<h4>A student work exhibition where technology meets art</h2>
+		<h5>25-27 March | 10am - 7pm | ArtScience Museum<br> 
+				Free Admission</h3>
+		<button class="site-default-button">Audio Tour</button>
+	</div>
 </article>
 
-<article class="site-content-block">
+<article class="site-content-block"> 
+	<h2 class="site-content-block-title white-underline">Explore</h2>
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/featuredArtists.jpg">
+		</div>
+		<h3>Featured Artists</h3>
+		<h4>A blast from the past, our speciality A blast from the past, our speciality A blast from the past, our speciality our speciality</h4>
+		<button class="site-default-button">View</button>
+	</div>
+
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/featuredArtists.jpg">
+		</div>
+		<h3>Featured Artworks</h3>
+		<h4>A blast from the past, our speciality A blast from the past, our speciality A blast from the past, our speciality our speciality</h4>
+		<button class="site-default-button">View</button>
+	</div>
+</article>
+<div id="map"></div>
+<script>
+  function initMap() {
+  	var mapDiv = document.getElementById('map');
+  	var myLatLng = {lat: 1.286331, lng: 103.859223};
+    var map = new google.maps.Map(mapDiv, {
+	    center: myLatLng,
+	    zoom: 17,
+	    scrollwheel: false,
+	    navigationControl: false,
+	    mapTypeControl: false,
+	    scaleControl: false,
+	    draggable: false,
+    });
+
+    var marker = new google.maps.Marker({
+	    position: myLatLng,
+	    map: map,
+	    title: 'ArtScience Museum'
+  	});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
+
+
+<footer>
+	
+</footer>
+
+
+
+<!-- <article class="site-content-block">
 	<h2 class="site-content-block-title underline">Blah blah</h2>
 	<div class="site-mosaic-wrapper">
 		<div class="site-mosaic-item site-mosaic-text"><h3 class="heading-underline">test</h3></div>
@@ -67,7 +124,7 @@
 		<div class="site-mosaic-item site-mosaic-text">The brown fox jumps over the lazy dog.</div>
 		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
 	</div>
-</article>
+</article> -->
 </body>
 
 <script>
@@ -110,7 +167,7 @@
 	        	var className = $(this).attr('class').split(' ')[0];
 	        	$('.' + className).removeClass('hover');
 	    	}
-});
+		});
 	});
 </script>
 

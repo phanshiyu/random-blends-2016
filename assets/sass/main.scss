@@ -94,12 +94,13 @@ a {
 			.site-menu-item {
 				color: black;
 				transition: $default-button-transition;
-				background-color: white;
+				// background-color: white;
+				width: 70%;
 				padding: 0.5%;
-				margin: 1%;
+				margin: 1% auto 1% auto;
 
 				&.hover {
-					background-color: grey;
+					// background-color: grey;
 					color: white;
 				}
 			}
@@ -126,6 +127,7 @@ a {
 	}
 }
 
+
 .underline:after {
 	content: "";
 	width: 100px;
@@ -135,30 +137,51 @@ a {
 	margin: 1% auto 1% auto;
 }
 
+.white-underline:after {
+	content: "";
+	width: 100px;
+	height: 3px;
+	background-color: white;
+	display: block;
+	margin: 1% auto 1% auto;
+}
+
 // Default site button style end
 
 .site-content-block {
+	color: white;
 	position: relative;
 	width: 100%;
-
-	background-color: #e6e5e0;
+	background-color: #353636;
 	overflow: hidden;
 	text-align: center;
 	padding: 8% 3% 8% 3%;
+
 
 }
 
 // LOGO
 #site-logo-wrapper {
-	background-color: white;
-	#site-logo {
-		width: 100%
+	background: url('../images/header-pic.jpg') center;
+	background-size: cover;
+	height: 100vh;
+	color: black;
+
+	#site-logo-content {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+
+		#site-logo {
+			width: 100%;
+		}
 	}
 }
 
 // LOGO END
 
 .site-mosaic-wrapper {
+	color: black;
 	position: relative;
 
 	// To center object horizontally
@@ -206,4 +229,43 @@ a {
 		display: table;
 		clear: both;
 	}
+}
+
+
+//////////////
+.site-large-wrapper {
+	width: 90%;
+	margin: 0 auto 20px auto;
+	padding: 2%;
+	.site-large-image-wrapper {
+		overflow: hidden;
+		width: 96%;
+		height: 25vh;
+		img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	h2 {
+
+	}
+
+	h3 {
+		font-size: 1.8em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+	}
+}
+
+
+//////// MAP///////
+#map {
+	width: 100%;
+	height: 80vh;
 }
