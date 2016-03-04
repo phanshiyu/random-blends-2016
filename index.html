@@ -35,12 +35,10 @@
 			<!-- IMPORTANT WHEN ADDING: CHANGE THE FIRST CLASS OF EACH ITEM ACCORDINGLY -->
 			<a href="#featured"><li class="item-one site-menu-item"><h4>Featured Work</h4></li></a>
 			<a href="#"><li class="item-two site-menu-item"><h4>Contact us</h4></li></a>
-			<a href="#"><li class="item-three site-menu-item"><h4>LALALLa</h4></li></a>
-			<a href="#"><li class="item-four site-menu-item"><h4>LALALLa</h4></li></a>
-			<a href="#"><li class="item-five site-menu-item"><h4>LALALLa</h4></li></a>
-			<a href="#"><li class="item-six site-menu-item"><h4>LALALLa</h4></li></a>
-			<a href="#"><li class="item-seven site-menu-item"><h4>LALALLa</h4></li></a>
-		<ul>
+			<a href="#"><li class="item-three site-menu-item"><h4>Gallery</h4></li></a>
+			<a href="#"><li class="item-four site-menu-item"><h4>History</h4></li></a>
+			<a href="#map"><li class="item-five site-menu-item"><h4>Getting There</h4></li></a>
+		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
 			<div class="empty-container"></div>
 			<span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
@@ -139,6 +137,13 @@
 		var menuWrapper = $('.site-menu-wrapper');
 		var siteMenuExpandButton = $('.site-menu-expand-button');
 		var isAccordion = false;
+
+		var cloneOfSiteMenu = $('.site-menu-list').clone();
+		var cloneWrapper = $('<div></div>')
+							.addClass('full-navbar')
+							.append(cloneOfSiteMenu);
+
+		$('body').append(cloneWrapper);
 
 		var oriDomi = new OriDomi('.site-menu', { touchEnabled: false });
 
