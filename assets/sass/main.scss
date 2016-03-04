@@ -3,7 +3,13 @@ $screen-height-iphone: 480px;
 $default-font: 'Playfair Display', serif;
 $header-font: 'Josefin Sans', sans-serif;
 $default-button-transition: all 1s ease;
+
 $menu-color: #768486;
+$site-menu-button-color: #a8c4c7;
+$site-menu-button-hover-color: #6f8486;
+
+$default-button-color: #a8c4c7;
+$default-button-hover-color: #6f8486;
 
 // We first handle the smaller screen sizes, starting with iphone
 body {
@@ -22,7 +28,7 @@ a {
 	transition: $default-button-transition;
 	display: inline-block;
 	text-align: center;
-	background-color: #a8c4c7;
+	background-color: $site-menu-button-color;
 
 	&:before{
 		content: "";
@@ -47,7 +53,7 @@ a {
 	}
 
 	&:hover {
-		background-color: #6f8486;
+		background-color: $site-menu-button-hover-color;
 	}
 }
 
@@ -169,7 +175,7 @@ a {
 	width: 70%;
 	font-size: 1.5em;
 
-	background-color: #a8c4c7;
+	background-color: $default-button-hover;
 	border: none;
 	outline: 0;
 	padding: 10px;
@@ -177,7 +183,7 @@ a {
 	font-family: $header-font;
 
 	&:hover {
-		background-color: #6f8486;
+		background-color: $default-button-hover-color;
 	}
 }
 
