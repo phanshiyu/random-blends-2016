@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+<title>Random Blends 2016</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- STYLESHEETS -->
+<!-- Boostrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display' rel='stylesheet' type='text/css'>
+<!-- Our Stylesheets -->
+<link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
+
+<!-- JAVASCRIPTS -->
+<!-- JQuery -->
+<script src="assets/javascripts/jquery-2.2.1.min.js"></script>
+<script src="assets/javascripts/oridomi.min.js"></script>
+
+<!-- Boostrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Our Javascripts -->
+
+</head>
+<body>
+<!-- Menu Button -->
+<button class="site-menu-expand-button site-menu-button">
+	<div class="empty-container"></div>
+	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+</button>
+<!-- Folding Menu -->
+<div class="site-menu-wrapper">
+	<div class="site-menu">
+		<h1 class="header-font site-menu-header underline">Menu</h1>
+		<ul class="site-menu-list">
+			<!-- IMPORTANT WHEN ADDING: CHANGE THE FIRST CLASS OF EACH ITEM ACCORDINGLY -->
+			<a href="#featured"><li class="item-one site-menu-item"><h4>Featured Work</h4></li></a>
+			<a href="#"><li class="item-two site-menu-item"><h4>Contact us</h4></li></a>
+			<a href="#"><li class="item-three site-menu-item"><h4>Gallery</h4></li></a>
+			<a href="#"><li class="item-four site-menu-item"><h4>History</h4></li></a>
+			<a href="#map"><li class="item-five site-menu-item"><h4>Getting There</h4></li></a>
+		</ul>
+		<button class="site-menu-collapse-button site-menu-button">
+			<div class="empty-container"></div>
+			<span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+		</button>
+	</div>
+</div>
+
+<article id="site-logo-wrapper" class="site-content-block">
+	<div id="site-logo-content">
+		<img id="site-logo" src="assets/images/random-blends.jpg">
+		<h4>A student work exhibition where technology meets art</h2>
+		<h5>25-27 March | 10am - 7pm | ArtScience Museum<br> 
+				Free Admission</h3>
+		<button class="site-default-button">Audio Tour</button>
+	</div>
+</article>
+
+<article id="featured" class="site-content-block"> 
+	<h2 class="header-font site-content-block-title underline">Explore</h2>
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/featuredArtists.jpg">
+		</div>
+		<h3 class="header-font">Featured Artists</h3>
+		<p>A blast from the past, our speciality A blast from the past, our speciality A blast from the past, our speciality our speciality</p>
+		<button class="site-default-button">View</button>
+	</div>
+
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/featuredArtwork.jpg">
+		</div>
+		<h3 class="header-font">Featured Artworks</h3>
+		<p>A blast from the past, our speciality A blast from the past, our speciality A blast from the past, our speciality our speciality</p>
+		<button class="site-default-button">View</button>
+	</div>
+</article>
+<div id="map"></div>
+<script>
+  function initMap() {
+  	var mapDiv = document.getElementById('map');
+  	var myLatLng = {lat: 1.286331, lng: 103.859223};
+    var map = new google.maps.Map(mapDiv, {
+	    center: myLatLng,
+	    zoom: 17,
+	    scrollwheel: false,
+	    navigationControl: false,
+	    mapTypeControl: false,
+	    scaleControl: false,
+	    draggable: false,
+    });
+
+    var marker = new google.maps.Marker({
+	    position: myLatLng,
+	    map: map,
+	    title: 'ArtScience Museum'
+  	});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
+
+
+<footer>
+	<div class="sponsors-wrapper">
+		<h2 class="header-font">Proudly Presented By: </h2>
+		<div class="sponsors-image-wrapper">
+			<img src="./assets/images/logo.png" class="sponsor-logo">
+			<img src="./assets/images/nus-logo.jpg" class="sponsor-logo">
+			<img src="./assets/images/asm-logo.jpg" class="sponsor-logo">
+		</div>
+	</div>
+</footer>
+
+
+
+<!-- <article class="site-content-block">
+	<h2 class="site-content-block-title underline">Blah blah</h2>
+	<div class="site-mosaic-wrapper">
+		<div class="site-mosaic-item site-mosaic-text"><h3 class="heading-underline">test</h3></div>
+		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
+	</div>
+	<div class="site-mosaic-wrapper">
+		<div class="site-mosaic-item site-mosaic-text">The brown fox jumps over the lazy dog.</div>
+		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
+	</div>
+	<div class="site-mosaic-wrapper">
+		<div class="site-mosaic-item site-mosaic-text">The brown fox jumps over the lazy dog.</div>
+		<img class="site-mosaic-item site-mosaic-image" src="assets/images/dummy.jpg">
+	</div>
+</article> -->
+</body>
+
+<script>
+	$(document).ready(function() {		
+		var menuWrapper = $('.site-menu-wrapper');
+		var siteMenuExpandButton = $('.site-menu-expand-button');
+		var isAccordion = false;
+
+		var cloneOfSiteMenu = $('.site-menu-list').clone();
+		var cloneWrapper = $('<div></div>')
+							.addClass('full-navbar')
+							.append(cloneOfSiteMenu);
+
+		$('body').append(cloneWrapper);
+
+		var oriDomi = new OriDomi('.site-menu', { touchEnabled: false });
+
+		oriDomi.foldUp();
+
+		setTimeout(function(){
+    		siteMenuExpandButton.fadeIn();
+		}, 500);
+		
+		$('.site-menu-collapse-button').click(function() {
+			oriDomi.foldUp(function() {
+				setTimeout(function(){
+		    		menuWrapper.hide();
+					siteMenuExpandButton.fadeIn(200);
+				}, 500);
+			});
+		})
+
+		siteMenuExpandButton.click(function () {
+			$(this).hide();
+			menuWrapper.show();
+			setTimeout(function(){
+    			oriDomi.accordion(10);
+			}, 500);
+		})
+
+		$(".site-menu-item").on({
+	    	mouseenter: function () {
+	        	var className = $(this).attr('class').split(' ')[0];
+	        	$('.' + className).addClass('hover');
+	    	},
+	    	mouseleave: function () {
+	        	var className = $(this).attr('class').split(' ')[0];
+	        	$('.' + className).removeClass('hover');
+	    	}
+		});
+	});
+</script>
+
+</html>
