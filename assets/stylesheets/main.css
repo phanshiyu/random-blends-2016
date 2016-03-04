@@ -436,4 +436,39 @@ footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
   .full-navbar {
     display: block;
   }
+
+  /* line 486, ../sass/main.scss */
+  .site-large-wrapper {
+    position: relative;
+    width: 350px;
+    margin: 0 20px 20px 20px;
+    background-color: #e6e5e0;
+    color: black;
+    height: 430px;
+    display: inline-block;
+  }
+  /* line 494, ../sass/main.scss */
+  .site-large-wrapper .site-large-image-wrapper {
+    overflow: hidden;
+    width: 98%;
+    width: auto;
+    height: 180px;
+  }
+  /* line 499, ../sass/main.scss */
+  .site-large-wrapper .site-large-image-wrapper img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+  }
+  /* line 512, ../sass/main.scss */
+  .site-large-wrapper h3 {
+    margin-top: 10%;
+    font-size: 1.8em;
+  }
+  /* line 517, ../sass/main.scss */
+  .site-large-wrapper p {
+    font-size: 1.2em;
+  }
 }
