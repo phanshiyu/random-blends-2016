@@ -50,9 +50,9 @@ a {
 /* line 54, ../sass/main.scss */
 .site-menu-expand-button {
   display: none;
-  width: 13%;
+  width: 42px;
   color: white;
-  padding: 3%;
+  padding: 10px;
   position: fixed;
   border: none;
   outline: 0;
@@ -78,8 +78,8 @@ a {
 }
 /* line 84, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-collapse-button {
-  width: 15%;
-  margin: 1%;
+  width: 42px;
+  margin: 10px;
   color: white;
   border: none;
   outline: 0;
@@ -114,7 +114,7 @@ a {
   background-color: #a8c4c7;
   border: none;
   outline: 0;
-  padding: 4%;
+  padding: 10px;
   transition: all 1s ease;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -158,7 +158,7 @@ a {
 #site-logo-wrapper {
   background: url("../images/header-pic.jpg") center;
   background-size: cover;
-  height: 100vh;
+  height: 500px;
   color: black;
 }
 /* line 174, ../sass/main.scss */
@@ -263,7 +263,7 @@ a {
 footer {
   position: relative;
   background-color: white;
-  height: 30vh;
+  height: 200px;
   width: 100%;
 }
 /* line 292, ../sass/main.scss */
@@ -296,20 +296,90 @@ footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
   margin: 0 5px 0 5px;
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 490px) {
   /* line 326, ../sass/main.scss */
+  .site-content-block-title {
+    font-size: 2.5em;
+  }
+
+  /* line 330, ../sass/main.scss */
+  footer {
+    height: 250px;
+  }
+  /* line 336, ../sass/main.scss */
+  footer .sponsors-wrapper h2 {
+    font-size: 1.7em;
+  }
+  /* line 340, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper {
+    width: 390px;
+  }
+  /* line 343, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
+    width: 110px;
+    margin: 0 10px 0 10px;
+  }
+}
+@media screen and (min-width: 624px) {
+  /* line 354, ../sass/main.scss */
+  .site-content-block-title {
+    font-size: 2.7em;
+  }
+
+  /* line 358, ../sass/main.scss */
+  #site-logo-wrapper {
+    height: 600px;
+  }
+  /* line 361, ../sass/main.scss */
+  #site-logo-wrapper #site-logo-content #site-logo {
+    width: 624px;
+  }
+  /* line 365, ../sass/main.scss */
+  #site-logo-wrapper #site-logo-content h4 {
+    font-size: 1.7em;
+  }
+  /* line 368, ../sass/main.scss */
+  #site-logo-wrapper #site-logo-content h5 {
+    font-size: 1.3em;
+  }
+  /* line 373, ../sass/main.scss */
+  #site-logo-wrapper .site-default-button {
+    width: 410px;
+  }
+
+  /* line 379, ../sass/main.scss */
   .site-large-wrapper {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
   }
-  /* line 340, ../sass/main.scss */
+  /* line 393, ../sass/main.scss */
   .site-large-wrapper h3 {
     margin-top: 10%;
     font-size: 1.8em;
   }
-  /* line 345, ../sass/main.scss */
+  /* line 398, ../sass/main.scss */
   .site-large-wrapper h4 {
     font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 406, ../sass/main.scss */
+  .site-content-block-title {
+    font-size: 2.8em;
+  }
+
+  /* line 415, ../sass/main.scss */
+  footer .sponsors-wrapper h2 {
+    font-size: 1.7em;
+  }
+  /* line 419, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper {
+    width: 480px;
+  }
+  /* line 422, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
+    width: 130px;
+    margin: 0 15px 0 15px;
   }
 }
