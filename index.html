@@ -36,8 +36,8 @@
 			<a href="#featured"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
 			<a href="#"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
 			<a href="#"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
-			<a href="#"><li class="item-four site-menu-item"><h4>Getting Here</h4></li></a>
-			<a href="#map"><li class="item-five site-menu-item"><h4>Contact Us</h4></li></a>
+			<a href="#"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
+			<a href="#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
 		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
 			<div class="empty-container"></div>
@@ -50,8 +50,9 @@
 	<div id="site-logo-content">
 		<img id="site-logo" src="assets/images/random-blends.png">
 		<h4>A student showcase of digital media and interactive art</h2>
-		<h5>25-27 March | 10am - 7pm (last admission 6PM) <br>| ArtScience Museum | Free Admission</h3>
-		<button class="site-default-button">Audio Tour</button>
+		<h5>25-27 March | 10am - 7pm (Last Admission 6PM)<br> 
+			ArtScience Museum | Free Admission</h5>
+		<button class="site-default-button">Plan Your Visit</button>
 	</div>
 </article>
 
@@ -116,28 +117,29 @@
 	</div>
 </footer>
 
-<div id="map"></div>
-<script>
-  function initMap() {
-  	var mapDiv = document.getElementById('map');
-  	var myLatLng = {lat: 1.286331, lng: 103.859223};
-    var map = new google.maps.Map(mapDiv, {
-	    center: myLatLng,
-	    zoom: 17,
-	    scrollwheel: false,
-	    navigationControl: false,
-	    mapTypeControl: false,
-	    scaleControl: false,
-	    draggable: false,
-    });
+<!-- <div id="map"></div> -->
+// <script>
+//   function initMap() {
+//   	var mapDiv = document.getElementById('map');
+//   	var myLatLng = {lat: 1.286331, lng: 103.859223};
+//     var map = new google.maps.Map(mapDiv, {
+// 	    center: myLatLng,
+// 	    zoom: 17,
+// 	    scrollwheel: false,
+// 	    navigationControl: false,
+// 	    mapTypeControl: false,
+// 	    scaleControl: false,
+// 	    draggable: false,
+//     });
 
-    var marker = new google.maps.Marker({
-	    position: myLatLng,
-	    map: map,
-	    title: 'ArtScience Museum'
-  	});
-  }
-</script>
+//     var marker = new google.maps.Marker({
+// 	    position: myLatLng,
+// 	    map: map,
+// 	    title: 'ArtScience Museum'
+//   	});
+//   }
+// </script>
+
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
          async defer></script>
 
