@@ -137,8 +137,8 @@ a {
 
 	.site-menu-list {
 		position: relative;
-		width: auto;
-		margin: auto;
+		width: 100%;
+		// margin: auto;
 		display: inline-block;
 		top: 50%;
 		transform: translateY(-50%);
@@ -334,6 +334,25 @@ a {
 	height: 400px;
 }
 
+//random blends of sounds
+
+#random-blend-of-sounds-wrapper {
+	padding: 0 0 20px 0;
+	background: url('../images/header-pic.jpg') center;
+	background-size: cover;
+	#random-blend-of-sounds-content {
+		overflow: hidden;
+		#random-blend-of-sounds-splash {
+			display: block;
+			width: 120%;
+			transform: translateX(-10%);
+		}
+		h5 {
+			font-size: 1.2em;
+		}
+	}
+}
+
 footer {
 	position: relative;
 	background-color: white;
@@ -523,5 +542,37 @@ footer {
 		p {
 			font-size: 1.2em;
 		}
+	}
+
+	//random blends of sounds
+
+	#random-blend-of-sounds-wrapper {
+		padding: 0;
+		#random-blend-of-sounds-content {
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+
+			#random-blend-of-sounds-splash {
+				position: relative;
+			}
+			h5 {
+				position: absolute;
+				font-size: 1.8em;
+				width: 100%;
+				margin: 0;
+				bottom: 120px;
+			}
+
+			.site-default-button {
+				position: absolute;
+				bottom: 40px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+		}
+		padding: 0;
+
 	}
 }
