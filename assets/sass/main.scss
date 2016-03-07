@@ -1,6 +1,6 @@
 $screen-width-iphone: 320px;
 $screen-height-iphone: 480px;
-$default-font: 'Playfair Display', serif;
+$default-font: 'Josefin Sans', serif;
 $header-font: 'Josefin Sans', sans-serif;
 $default-button-transition: all 1s ease;
 
@@ -227,7 +227,7 @@ a {
 
 // LOGO
 #site-logo-wrapper {
-	background: url('../images/header-pic.jpg') center;
+	background: url('../images/header-pic-small.jpg') center;
 	background-size: cover;
 	height: 500px;
 	color: black;
@@ -388,7 +388,7 @@ footer {
 			margin: auto;
 			height: 25vh;
 
-			.sponsor-logo {
+			.site-sponsor-logo {
 				float: left;
 				top: 50%;
 				position: relative;
@@ -420,7 +420,7 @@ footer {
 			.sponsors-image-wrapper {
 				width: $sponsorImageWrapperWidth;
 
-				.sponsor-logo {
+				.site-sponsor-logo {
 					width: $sponsorImageWidth;
 					margin: 0 10px 0 10px;
 				}
@@ -490,6 +490,9 @@ footer {
 		font-size: 2.8em;
 	}
 
+	#site-logo-wrapper {
+		background: url('../images/header-pic.jpg') center;
+	}
 	footer {
 		$sponsorImageWidth: 130px;
 		$sponsorLogoTotalWidth: $sponsorImageWidth + (15px * 2);
@@ -502,7 +505,7 @@ footer {
 			.sponsors-image-wrapper {
 				width: $sponsorImageWrapperWidth;
 
-				.sponsor-logo {
+				.site-sponsor-logo {
 					width: $sponsorImageWidth;
 					margin: 0 15px 0 15px;
 				}

@@ -1,7 +1,7 @@
 /* line 1, ../sass/contact-us.scss */
 #contact-us-wrapper {
   position: relative;
-  background: url("../images/header-pic.jpg") center;
+  background: url("../images/header-pic-small.jpg") center;
   background-size: cover;
   height: 400px;
 }

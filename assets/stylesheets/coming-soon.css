@@ -8,7 +8,7 @@
 
 /* line 8, ../sass/coming-soon.scss */
 #coming-soon-wrapper {
-  background: url("../images/header-pic.jpg") center;
+  background: url("../images/header-pic-small.jpg") center;
   background-size: cover;
   height: 500px;
 }
