@@ -1,32 +1,32 @@
-/* line 15, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 body {
   font-family: "Playfair Display", serif;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 a {
   text-decoration: none !important;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .header-font {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .site-menu-button {
   transition: all 1s ease;
   display: inline-block;
   text-align: center;
   background-color: #a8c4c7;
 }
-/* line 33, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .site-menu-button:before {
   content: "";
   display: block;
   margin-top: 100%;
 }
-/* line 38, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .site-menu-button .empty-container {
   position: absolute;
   top: 0;
@@ -34,7 +34,7 @@ a {
   left: 0;
   right: 0;
 }
-/* line 46, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .site-menu-button .glyphicon {
   margin: auto;
   font-size: 3em;
@@ -42,12 +42,12 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 55, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .site-menu-button:hover {
   background-color: #6f8486;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .site-menu-expand-button {
   display: none;
   width: 42px;
@@ -61,7 +61,7 @@ a {
   z-index: 1;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .site-menu-wrapper {
   display: none;
   position: fixed;
@@ -69,14 +69,14 @@ a {
   width: 100%;
   text-align: center;
 }
-/* line 82, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .site-menu-wrapper .site-menu {
   padding: 3%;
   width: 100%;
   height: 100vh;
   background-color: #768486;
 }
-/* line 91, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-collapse-button {
   width: 42px;
   margin: 10px;
@@ -87,13 +87,13 @@ a {
   top: 0;
   right: 0;
 }
-/* line 102, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-list {
   list-style-type: none;
   padding: 0;
   height: 30vh;
 }
-/* line 106, ../sass/main.scss */
+/* line 108, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-list .site-menu-item {
   color: black;
   transition: all 1s ease;
@@ -101,23 +101,23 @@ a {
   padding: 0.5%;
   margin: 1% auto 1% auto;
 }
-/* line 114, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .site-menu-wrapper .site-menu .site-menu-list .site-menu-item.hover {
   color: white;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .full-navbar {
   position: fixed;
   top: 0;
   left: 0;
   background-color: #768486;
   display: none;
-  height: 42px;
+  height: 43px;
   width: 100%;
   text-align: center;
 }
-/* line 138, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .full-navbar .site-menu-list {
   position: relative;
   width: 100%;
@@ -126,7 +126,7 @@ a {
   transform: translateY(-50%);
   list-style-type: none;
 }
-/* line 146, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .full-navbar .site-menu-list a {
   display: inline-block;
   color: black;
@@ -135,21 +135,26 @@ a {
   margin: 15px auto 15px auto;
   border-left: 1px solid #92a9ac;
 }
-/* line 154, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .full-navbar .site-menu-list a:hover {
   background-color: #f7f1e6;
   color: black;
 }
-/* line 159, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
+.full-navbar .site-menu-list a.selected {
+  color: white;
+  background-color: #626e70;
+}
+/* line 166, ../sass/main.scss */
 .full-navbar .site-menu-list a h4 {
   margin: 0;
 }
-/* line 163, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 .full-navbar .site-menu-list a:last-child {
   border-right: 1px solid #92a9ac;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .site-default-button {
   color: white;
   width: 70%;
@@ -161,12 +166,12 @@ a {
   transition: all 1s ease;
   font-family: "Josefin Sans", sans-serif;
 }
-/* line 185, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .site-default-button:hover {
   background-color: #6f8486;
 }
 
-/* line 191, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .underline:after {
   content: "";
   width: 100px;
@@ -176,7 +181,7 @@ a {
   margin: 1% auto 1% auto;
 }
 
-/* line 200, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .white-underline:after {
   content: "";
   width: 100px;
@@ -186,7 +191,7 @@ a {
   margin: 1% auto 1% auto;
 }
 
-/* line 211, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .site-content-block {
   color: black;
   position: relative;
@@ -197,25 +202,25 @@ a {
   padding: 15px 10px 20px 10px;
 }
 
-/* line 222, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 #site-logo-wrapper {
   background: url("../images/header-pic.jpg") center;
   background-size: cover;
   height: 500px;
   color: black;
 }
-/* line 228, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 #site-logo-wrapper #site-logo-content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 233, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 #site-logo-wrapper #site-logo-content #site-logo {
   width: 100%;
 }
 
-/* line 241, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 .site-mosaic-wrapper {
   color: black;
   position: relative;
@@ -224,44 +229,44 @@ a {
   margin: 3% auto 3% auto;
   text-align: center;
 }
-/* line 251, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-item {
   width: 140px;
   height: 140px;
 }
-/* line 256, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-text {
   padding: 1%;
   background-color: white;
 }
-/* line 262, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 .site-mosaic-wrapper .site-mosaic-image {
   background-color: yellow;
 }
-/* line 267, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-text {
   float: left;
 }
-/* line 270, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(odd) .site-mosaic-image {
   float: right;
 }
-/* line 276, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-text {
   float: right;
 }
-/* line 279, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .site-mosaic-wrapper:nth-child(even) .site-mosaic-image {
   float: left;
 }
-/* line 285, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .site-mosaic-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 294, ../sass/main.scss */
+/* line 301, ../sass/main.scss */
 .site-large-wrapper {
   position: relative;
   width: 300px;
@@ -271,14 +276,14 @@ a {
   height: 400px;
   display: inline-block;
 }
-/* line 302, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .site-large-wrapper .site-large-image-wrapper {
   overflow: hidden;
   width: 98%;
   width: auto;
   height: 160px;
 }
-/* line 307, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 .site-large-wrapper .site-large-image-wrapper img {
   position: relative;
   top: 50%;
@@ -286,51 +291,51 @@ a {
   width: 100%;
   height: auto;
 }
-/* line 320, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 .site-large-wrapper h3 {
   margin-top: 10%;
   font-size: 1.8em;
 }
-/* line 325, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 .site-large-wrapper p {
   font-size: 1.2em;
 }
 
-/* line 332, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 #map {
   width: 100%;
   height: 400px;
 }
 
-/* line 339, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 #random-blend-of-sounds-wrapper {
   padding: 0 0 20px 0;
   background: url("../images/header-pic.jpg") center;
   background-size: cover;
 }
-/* line 343, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 #random-blend-of-sounds-wrapper #random-blend-of-sounds-content {
   overflow: hidden;
 }
-/* line 345, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 #random-blend-of-sounds-wrapper #random-blend-of-sounds-content #random-blend-of-sounds-splash {
   display: block;
   width: 120%;
   transform: translateX(-10%);
 }
-/* line 350, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 #random-blend-of-sounds-wrapper #random-blend-of-sounds-content h5 {
   font-size: 1.2em;
 }
 
-/* line 356, ../sass/main.scss */
+/* line 363, ../sass/main.scss */
 footer {
   position: relative;
   background-color: white;
   height: 200px;
   width: 100%;
 }
-/* line 365, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 footer .sponsors-wrapper {
   text-align: center;
   position: absolute;
@@ -338,19 +343,19 @@ footer .sponsors-wrapper {
   width: 100%;
   padding: 1%;
 }
-/* line 373, ../sass/main.scss */
+/* line 380, ../sass/main.scss */
 footer .sponsors-wrapper h2 {
   margin-top: 20px;
   font-size: 1.5em;
 }
-/* line 378, ../sass/main.scss */
+/* line 385, ../sass/main.scss */
 footer .sponsors-wrapper .sponsors-image-wrapper {
   position: relative;
   width: 270px;
   margin: auto;
   height: 25vh;
 }
-/* line 384, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
   float: left;
   top: 50%;
@@ -361,103 +366,108 @@ footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
 }
 
 @media screen and (min-width: 490px) {
-  /* line 399, ../sass/main.scss */
+  /* line 406, ../sass/main.scss */
   .site-content-block-title {
     font-size: 2.5em;
   }
 
-  /* line 403, ../sass/main.scss */
+  /* line 410, ../sass/main.scss */
   footer {
     height: 250px;
   }
-  /* line 409, ../sass/main.scss */
+  /* line 416, ../sass/main.scss */
   footer .sponsors-wrapper h2 {
     font-size: 1.7em;
   }
-  /* line 413, ../sass/main.scss */
+  /* line 420, ../sass/main.scss */
   footer .sponsors-wrapper .sponsors-image-wrapper {
     width: 390px;
   }
-  /* line 416, ../sass/main.scss */
+  /* line 423, ../sass/main.scss */
   footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
     width: 110px;
     margin: 0 10px 0 10px;
   }
 }
 @media screen and (min-width: 624px) {
-  /* line 427, ../sass/main.scss */
+  /* line 434, ../sass/main.scss */
   .site-content-block-title {
     font-size: 2.7em;
   }
 
-  /* line 431, ../sass/main.scss */
+  /* line 438, ../sass/main.scss */
   #site-logo-wrapper {
     height: 600px;
   }
-  /* line 434, ../sass/main.scss */
+  /* line 441, ../sass/main.scss */
   #site-logo-wrapper #site-logo-content #site-logo {
     width: 624px;
   }
-  /* line 438, ../sass/main.scss */
+  /* line 445, ../sass/main.scss */
   #site-logo-wrapper #site-logo-content h4 {
     font-size: 1.7em;
   }
-  /* line 441, ../sass/main.scss */
+  /* line 448, ../sass/main.scss */
   #site-logo-wrapper #site-logo-content h5 {
     font-size: 1.3em;
   }
-  /* line 446, ../sass/main.scss */
+  /* line 453, ../sass/main.scss */
   #site-logo-wrapper .site-default-button {
     width: 410px;
   }
 
-  /* line 452, ../sass/main.scss */
+  /* line 459, ../sass/main.scss */
   .site-large-wrapper {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
   }
-  /* line 466, ../sass/main.scss */
+  /* line 473, ../sass/main.scss */
   .site-large-wrapper h3 {
     margin-top: 10%;
     font-size: 1.8em;
   }
-  /* line 471, ../sass/main.scss */
+  /* line 478, ../sass/main.scss */
   .site-large-wrapper h4 {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 479, ../sass/main.scss */
+  /* line 486, ../sass/main.scss */
+  body {
+    padding-top: 43px;
+  }
+
+  /* line 489, ../sass/main.scss */
   .site-content-block-title {
     font-size: 2.8em;
   }
 
-  /* line 488, ../sass/main.scss */
+  /* line 498, ../sass/main.scss */
   footer .sponsors-wrapper h2 {
     font-size: 1.7em;
   }
-  /* line 492, ../sass/main.scss */
+  /* line 502, ../sass/main.scss */
   footer .sponsors-wrapper .sponsors-image-wrapper {
     width: 480px;
   }
-  /* line 495, ../sass/main.scss */
+  /* line 505, ../sass/main.scss */
   footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
     width: 130px;
     margin: 0 15px 0 15px;
   }
 
-  /* line 503, ../sass/main.scss */
+  /* line 513, ../sass/main.scss */
   .site-menu-button {
     display: none !important;
   }
 
-  /* line 507, ../sass/main.scss */
+  /* line 517, ../sass/main.scss */
   .full-navbar {
     display: block;
   }
 
-  /* line 511, ../sass/main.scss */
+  /* line 521, ../sass/main.scss */
   .site-large-wrapper {
     position: relative;
     width: 350px;
@@ -467,14 +477,14 @@ footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
     height: 430px;
     display: inline-block;
   }
-  /* line 519, ../sass/main.scss */
+  /* line 529, ../sass/main.scss */
   .site-large-wrapper .site-large-image-wrapper {
     overflow: hidden;
     width: 98%;
     width: auto;
     height: 180px;
   }
-  /* line 524, ../sass/main.scss */
+  /* line 534, ../sass/main.scss */
   .site-large-wrapper .site-large-image-wrapper img {
     position: relative;
     top: 50%;
@@ -482,32 +492,32 @@ footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
     width: 100%;
     height: auto;
   }
-  /* line 537, ../sass/main.scss */
+  /* line 547, ../sass/main.scss */
   .site-large-wrapper h3 {
     margin-top: 10%;
     font-size: 1.8em;
   }
-  /* line 542, ../sass/main.scss */
+  /* line 552, ../sass/main.scss */
   .site-large-wrapper p {
     font-size: 1.2em;
   }
 
-  /* line 549, ../sass/main.scss */
+  /* line 559, ../sass/main.scss */
   #random-blend-of-sounds-wrapper {
     padding: 0;
     padding: 0;
   }
-  /* line 551, ../sass/main.scss */
+  /* line 561, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content {
     position: relative;
     overflow: hidden;
     text-align: center;
   }
-  /* line 556, ../sass/main.scss */
+  /* line 566, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content #random-blend-of-sounds-splash {
     position: relative;
   }
-  /* line 559, ../sass/main.scss */
+  /* line 569, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content h5 {
     position: absolute;
     font-size: 1.8em;
@@ -515,9 +525,10 @@ footer .sponsors-wrapper .sponsors-image-wrapper .sponsor-logo {
     margin: 0;
     bottom: 120px;
   }
-  /* line 567, ../sass/main.scss */
+  /* line 577, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content .site-default-button {
     position: absolute;
+    width: 400px;
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
