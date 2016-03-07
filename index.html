@@ -33,11 +33,11 @@
 		<h1 class="header-font site-menu-header underline">Menu</h1>
 		<ul class="site-menu-list">
 			<!-- IMPORTANT WHEN ADDING: CHANGE THE FIRST CLASS OF EACH ITEM ACCORDINGLY -->
-			<a href="#featured"><li class="item-one site-menu-item"><h4>Featured Work</h4></li></a>
-			<a href="#"><li class="item-two site-menu-item"><h4>Contact us</h4></li></a>
-			<a href="#"><li class="item-three site-menu-item"><h4>Gallery</h4></li></a>
-			<a href="#"><li class="item-four site-menu-item"><h4>History</h4></li></a>
-			<a href="#map"><li class="item-five site-menu-item"><h4>Getting There</h4></li></a>
+			<a href="#featured"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
+			<a href="#"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
+			<a href="#"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
+			<a href="#"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
+			<a href="#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
 		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
 			<div class="empty-container"></div>
@@ -48,11 +48,11 @@
 
 <article id="site-logo-wrapper" class="site-content-block">
 	<div id="site-logo-content">
-		<img id="site-logo" src="assets/images/random-blends.jpg">
-		<h4>A student work exhibition where technology meets art</h2>
-		<h5>25-27 March | 10am - 7pm | ArtScience Museum<br> 
-				Free Admission</h3>
-		<button class="site-default-button">Audio Tour</button>
+		<img id="site-logo" src="assets/images/random-blends.png">
+		<h4>A student showcase of digital media and interactive art</h2>
+		<h5>25-27 March | 10am - 7pm (Last Admission 6PM)<br> 
+			ArtScience Museum | Free Admission</h5>
+		<button class="site-default-button">Plan Your Visit</button>
 	</div>
 </article>
 
@@ -63,7 +63,7 @@
 			<img src="./assets/images/featuredArtists.jpg">
 		</div>
 		<h3 class="header-font">Featured Artists</h3>
-		<p>A blast from the past, our speciality A blast from the past, our speciality A blast from the past, our speciality our speciality</p>
+		<p>Take a closer look into the art and minds of some of our featured artists. Dive right in and get to know them.</p>
 		<button class="site-default-button">View</button>
 	</div>
 
@@ -72,46 +72,76 @@
 			<img src="./assets/images/featuredArtwork.jpg">
 		</div>
 		<h3 class="header-font">Featured Artworks</h3>
-		<p>A blast from the past, our speciality A blast from the past, our speciality A blast from the past, our speciality our speciality</p>
+		<p>The 2016 Random Blends Featured Artists embody a range of medium and techniques. Find out more about these featured artworks.</p>
 		<button class="site-default-button">View</button>
 	</div>
 </article>
-<div id="map"></div>
-<script>
-  function initMap() {
-  	var mapDiv = document.getElementById('map');
-  	var myLatLng = {lat: 1.286331, lng: 103.859223};
-    var map = new google.maps.Map(mapDiv, {
-	    center: myLatLng,
-	    zoom: 17,
-	    scrollwheel: false,
-	    navigationControl: false,
-	    mapTypeControl: false,
-	    scaleControl: false,
-	    draggable: false,
-    });
 
-    var marker = new google.maps.Marker({
-	    position: myLatLng,
-	    map: map,
-	    title: 'ArtScience Museum'
-  	});
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-         async defer></script>
+<article id="site-logo-wrapper" class="site-content-block" background: url('../images/random-sounds.jpg')>
+	<div id="site-logo-content">
+		<img id="site-logo" src="assets/images/random-sounds.jpg">
+		<h5><br>An installation that aims to amalgamate the physical and virtual gallery spaces.</h5><br>
+		<button class="site-default-button">Play</button>
+	</div>
+</article>
 
+<article id="featured" class="site-content-block"> 
+	<h2 class="header-font site-content-block-title underline">Learn</h2>
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/pressroom.jpg">
+		</div>
+		<h3 class="header-font">Pressroom</h3>
+		<p>Get the latest updates about Random Blends 2016 from our pressroom and social media. Hear what others are talking about us.</p>
+		<button class="site-default-button">Check it out</button>
+	</div>
+
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/audio-guide.jpg">
+		</div>
+		<h3 class="header-font">Audio Guide</h3>
+		<p>Listen to the narratives behind each work, and what our artists have to say about their inspirations and challenges.</p>
+		<button class="site-default-button">Try it</button>
+	</div>
+</article>
 
 <footer>
 	<div class="sponsors-wrapper">
-		<h2 class="header-font">Proudly Presented By: </h2>
+		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
 		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/logo.png" class="sponsor-logo">
-			<img src="./assets/images/nus-logo.jpg" class="sponsor-logo">
-			<img src="./assets/images/asm-logo.jpg" class="sponsor-logo">
+			<img src="./assets/images/rb-logo.png" class="sponsor-logo">
+			<img src="./assets/images/nus-cnm-logo.png" class="sponsor-logo">
+			<img src="./assets/images/asm-logo.png" class="sponsor-logo">
 		</div>
 	</div>
 </footer>
+
+<!-- <div id="map"></div> -->
+// <script>
+//   function initMap() {
+//   	var mapDiv = document.getElementById('map');
+//   	var myLatLng = {lat: 1.286331, lng: 103.859223};
+//     var map = new google.maps.Map(mapDiv, {
+// 	    center: myLatLng,
+// 	    zoom: 17,
+// 	    scrollwheel: false,
+// 	    navigationControl: false,
+// 	    mapTypeControl: false,
+// 	    scaleControl: false,
+// 	    draggable: false,
+//     });
+
+//     var marker = new google.maps.Marker({
+// 	    position: myLatLng,
+// 	    map: map,
+// 	    title: 'ArtScience Museum'
+//   	});
+//   }
+// </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
 
 
 
