@@ -47,7 +47,7 @@ a {
 
 	.glyphicon {
 		margin: auto;
-	    font-size: 3em;
+	    font-size: large;
 	    position: absolute;
 	    top: 50%;
 		transform: translate(-50%,-50%);
@@ -87,6 +87,7 @@ a {
 		height: 100vh;
 		background-color: $menu-color;
 		.site-menu-header {
+			color: white;
 
 		}
 
@@ -106,7 +107,7 @@ a {
 			padding: 0;
 			height: 30vh;
 			.site-menu-item {
-				color: black;
+				color: white;
 				transition: $default-button-transition;
 				// background-color: white;
 				width: 70%;
