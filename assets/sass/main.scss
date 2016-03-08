@@ -229,6 +229,10 @@ a {
 #site-logo-wrapper {
 	background: url('../images/header-pic-small.jpg') center;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	height: 500px;
 	color: black;
 
@@ -346,6 +350,10 @@ a {
 #random-blend-of-sounds-wrapper {
 	padding: 0 0 20px 0;
 	background: url('../images/header-pic.jpg') center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	#random-blend-of-sounds-content {
 		overflow: hidden;

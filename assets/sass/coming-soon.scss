@@ -8,5 +8,9 @@
 #coming-soon-wrapper {
 	background: url('../images/header-pic-small.jpg') center;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	height: 500px;
 }
