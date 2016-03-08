@@ -12,3 +12,8 @@
   text-align: left;
   padding: 10px;
 }
+
+/* line 13, ../sass/visit.scss */
+body {
+  background-color: white;
+}
