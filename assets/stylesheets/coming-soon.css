@@ -16,3 +16,8 @@
   background-size: cover;
   height: 500px;
 }
+
+/* line 18, ../sass/coming-soon.scss */
+body {
+  background-color: white;
+}
