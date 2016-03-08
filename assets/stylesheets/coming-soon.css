@@ -17,7 +17,18 @@
   height: 500px;
 }
 
-/* line 18, ../sass/coming-soon.scss */
+/* line 17, ../sass/coming-soon.scss */
+#coming-soon-wrapper {
+  background: url("../images/header-pic-small.jpg") center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+/* line 27, ../sass/coming-soon.scss */
 body {
   background-color: white;
 }
