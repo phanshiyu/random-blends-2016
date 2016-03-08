@@ -223,6 +223,10 @@ a {
 	overflow: hidden;
 	text-align: center;
 	padding: 15px 10px 20px 10px;
+
+	.site-large-wrapper p {
+		padding: 10px;
+	}
 }
 
 // LOGO
@@ -308,7 +312,7 @@ a {
 	margin: 0 auto 20px auto;
 	background-color: #e6e5e0;
 	color: black;
-	height: 400px;
+	height: 450px;
 	display: inline-block;
 	.site-large-image-wrapper {
 		overflow: hidden;
@@ -432,6 +436,7 @@ footer {
 @media screen and (min-width: 490px) {
 	.site-content-block-title {
 		font-size: 2.5em;
+		margin-bottom: 40px;
 	}
 
 	footer {
@@ -460,6 +465,7 @@ footer {
 @media screen and (min-width: 624px) {
 	.site-content-block-title {
 		font-size: 2.7em;
+		margin-bottom: 40px;
 	}
 
 	#site-logo-wrapper {
@@ -515,6 +521,7 @@ footer {
 	}
 	.site-content-block-title {
 		font-size: 2.8em;
+		margin-bottom: 40px;
 	}
 
 	#site-logo-wrapper {
