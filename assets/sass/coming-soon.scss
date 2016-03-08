@@ -1,0 +1,16 @@
+#coming-soon-header {
+	position: relative;
+	font-size: 2em;
+	top: 50%;
+	transform: translateY(-70%);
+}
+
+#coming-soon-wrapper {
+	background: url('../images/header-pic-small.jpg') center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+}

@@ -10,10 +10,12 @@
 <!-- Our Stylesheets -->
 <link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
 
-<!-- JAVASCRIPTS -->
 <!-- JQuery -->
 <script src="assets/javascripts/jquery-2.2.1.min.js"></script>
 <script src="assets/javascripts/oridomi.min.js"></script>
+
+<!-- JAVASCRIPTS -->
+<script src="assets/javascripts/navbar.js"></script>
 
 <!-- Boostrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -33,11 +35,11 @@
 		<h1 class="header-font site-menu-header underline">Menu</h1>
 		<ul class="site-menu-list">
 			<!-- IMPORTANT WHEN ADDING: CHANGE THE FIRST CLASS OF EACH ITEM ACCORDINGLY -->
-			<a href="#featured"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
-			<a href="#"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
-			<a href="#"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
-			<a href="#"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
-			<a href="#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
+			<a href="./index.html#explore"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
+			<a href="./index.html#play"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
+			<a href="./index.html#learn"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
+			<a href="./contact-us.html"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
+			<a href="./contact-us.html#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
 		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
 			<div class="empty-container"></div>
@@ -52,11 +54,11 @@
 		<h4>A student showcase of digital media and interactive art</h2>
 		<h5>25-27 March | 10am - 7pm (Last Admission 6PM)<br> 
 			ArtScience Museum | Free Admission</h5>
-		<button class="site-default-button">Plan Your Visit</button>
+		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">Plan Your Visit</button>
 	</div>
 </article>
 
-<article id="featured" class="site-content-block"> 
+<article id="explore" class="site-content-block"> 
 	<h2 class="header-font site-content-block-title underline">Explore</h2>
 	<div class="site-large-wrapper">
 		<div class="site-large-image-wrapper">
@@ -64,7 +66,7 @@
 		</div>
 		<h3 class="header-font">Featured Artists</h3>
 		<p>Take a closer look into the art and minds of some of our featured artists. Dive right in and get to know them.</p>
-		<button class="site-default-button">View</button>
+		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">View</button>
 	</div>
 
 	<div class="site-large-wrapper">
@@ -73,19 +75,20 @@
 		</div>
 		<h3 class="header-font">Featured Artworks</h3>
 		<p>The 2016 Random Blends Featured Artists embody a range of medium and techniques. Find out more about these featured artworks.</p>
-		<button class="site-default-button">View</button>
+		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">View</button>
 	</div>
 </article>
 
-<article id="site-logo-wrapper" class="site-content-block" background: url('../images/random-sounds.jpg')>
-	<div id="site-logo-content">
-		<img id="site-logo" src="assets/images/random-sounds.jpg">
-		<h5><br>An installation that aims to amalgamate the physical and virtual gallery spaces.</h5><br>
-		<button class="site-default-button">Play</button>
+<article id="random-blend-of-sounds-wrapper" class="site-content-block">
+<div id="play"></div>
+	<div id="random-blend-of-sounds-content">
+		<img id="random-blend-of-sounds-splash" src="assets/images/random-sounds.jpg">
+		<h5>An installation that aims to amalgamate the physical and virtual gallery spaces.</h5>
+		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">Play</button>
 	</div>
 </article>
 
-<article id="featured" class="site-content-block"> 
+<article id="learn" class="site-content-block"> 
 	<h2 class="header-font site-content-block-title underline">Learn</h2>
 	<div class="site-large-wrapper">
 		<div class="site-large-image-wrapper">
@@ -93,7 +96,7 @@
 		</div>
 		<h3 class="header-font">Pressroom</h3>
 		<p>Get the latest updates about Random Blends 2016 from our pressroom and social media. Hear what others are talking about us.</p>
-		<button class="site-default-button">Check it out</button>
+		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">Check it out</button>
 	</div>
 
 	<div class="site-large-wrapper">
@@ -102,7 +105,7 @@
 		</div>
 		<h3 class="header-font">Audio Guide</h3>
 		<p>Listen to the narratives behind each work, and what our artists have to say about their inspirations and challenges.</p>
-		<button class="site-default-button">Try it</button>
+		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">Try it</button>
 	</div>
 </article>
 
@@ -110,15 +113,15 @@
 	<div class="sponsors-wrapper">
 		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
 		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/rb-logo.png" class="sponsor-logo">
-			<img src="./assets/images/nus-cnm-logo.png" class="sponsor-logo">
-			<img src="./assets/images/asm-logo.png" class="sponsor-logo">
+			<img src="./assets/images/rb-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/nus-cnm-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/asm-logo.png" class="site-sponsor-logo">
 		</div>
 	</div>
 </footer>
 
 <!-- <div id="map"></div> -->
-// <script>
+<script>
 //   function initMap() {
 //   	var mapDiv = document.getElementById('map');
 //   	var myLatLng = {lat: 1.286331, lng: 103.859223};
@@ -161,56 +164,4 @@
 	</div>
 </article> -->
 </body>
-
-<script>
-	$(document).ready(function() {		
-		var menuWrapper = $('.site-menu-wrapper');
-		var siteMenuExpandButton = $('.site-menu-expand-button');
-		var isAccordion = false;
-
-		var cloneOfSiteMenu = $('.site-menu-list').clone();
-		var cloneWrapper = $('<div></div>')
-							.addClass('full-navbar')
-							.append(cloneOfSiteMenu);
-
-		$('body').append(cloneWrapper);
-
-		var oriDomi = new OriDomi('.site-menu', { touchEnabled: false });
-
-		oriDomi.foldUp();
-
-		setTimeout(function(){
-    		siteMenuExpandButton.fadeIn();
-		}, 500);
-		
-		$('.site-menu-collapse-button').click(function() {
-			oriDomi.foldUp(function() {
-				setTimeout(function(){
-		    		menuWrapper.hide();
-					siteMenuExpandButton.fadeIn(200);
-				}, 500);
-			});
-		})
-
-		siteMenuExpandButton.click(function () {
-			$(this).hide();
-			menuWrapper.show();
-			setTimeout(function(){
-    			oriDomi.accordion(10);
-			}, 500);
-		})
-
-		$(".site-menu-item").on({
-	    	mouseenter: function () {
-	        	var className = $(this).attr('class').split(' ')[0];
-	        	$('.' + className).addClass('hover');
-	    	},
-	    	mouseleave: function () {
-	        	var className = $(this).attr('class').split(' ')[0];
-	        	$('.' + className).removeClass('hover');
-	    	}
-		});
-	});
-</script>
-
 </html>

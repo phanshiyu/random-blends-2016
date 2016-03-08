@@ -1,6 +1,6 @@
 $screen-width-iphone: 320px;
 $screen-height-iphone: 480px;
-$default-font: 'Playfair Display', serif;
+$default-font: 'Josefin Sans', serif;
 $header-font: 'Josefin Sans', sans-serif;
 $default-button-transition: all 1s ease;
 
@@ -10,6 +10,8 @@ $site-menu-button-hover-color: #6f8486;
 
 $default-button-color: #a8c4c7;
 $default-button-hover-color: #6f8486;
+
+$navbar-height: 43px;
 
 // We first handle the smaller screen sizes, starting with iphone
 body {
@@ -130,15 +132,15 @@ a {
 	left: 0;
 	background-color: $menu-color;
 	display: none;
-	height: 42px;
+	height: $navbar-height;
 	width: 100%;
 
 	text-align: center;
 
 	.site-menu-list {
 		position: relative;
-		width: auto;
-		margin: auto;
+		width: 100%;
+		// margin: auto;
 		display: inline-block;
 		top: 50%;
 		transform: translateY(-50%);
@@ -154,6 +156,11 @@ a {
 			&:hover {
 				background-color: #f7f1e6;
 				color: black;
+			}
+
+			&.selected {
+				color: white;
+				background-color: #626e70;
 			}
 
 			h4 {
@@ -220,7 +227,11 @@ a {
 
 // LOGO
 #site-logo-wrapper {
-	background: url('../images/header-pic.jpg') center;
+	background: url('../images/header-pic-small.jpg') center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	height: 500px;
 	color: black;
@@ -334,6 +345,29 @@ a {
 	height: 400px;
 }
 
+//random blends of sounds
+
+#random-blend-of-sounds-wrapper {
+	padding: 0 0 20px 0;
+	background: url('../images/header-pic.jpg') center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	#random-blend-of-sounds-content {
+		overflow: hidden;
+		#random-blend-of-sounds-splash {
+			display: block;
+			width: 120%;
+			transform: translateX(-10%);
+		}
+		h5 {
+			font-size: 1.2em;
+		}
+	}
+}
+
 footer {
 	position: relative;
 	background-color: white;
@@ -362,7 +396,7 @@ footer {
 			margin: auto;
 			height: 25vh;
 
-			.sponsor-logo {
+			.site-sponsor-logo {
 				float: left;
 				top: 50%;
 				position: relative;
@@ -394,7 +428,7 @@ footer {
 			.sponsors-image-wrapper {
 				width: $sponsorImageWrapperWidth;
 
-				.sponsor-logo {
+				.site-sponsor-logo {
 					width: $sponsorImageWidth;
 					margin: 0 10px 0 10px;
 				}
@@ -457,10 +491,16 @@ footer {
 
 
 @media screen and (min-width: 800px) {
+	body {
+		padding-top: $navbar-height;
+	}
 	.site-content-block-title {
 		font-size: 2.8em;
 	}
 
+	#site-logo-wrapper {
+		background: url('../images/header-pic.jpg') center;
+	}
 	footer {
 		$sponsorImageWidth: 130px;
 		$sponsorLogoTotalWidth: $sponsorImageWidth + (15px * 2);
@@ -473,7 +513,7 @@ footer {
 			.sponsors-image-wrapper {
 				width: $sponsorImageWrapperWidth;
 
-				.sponsor-logo {
+				.site-sponsor-logo {
 					width: $sponsorImageWidth;
 					margin: 0 15px 0 15px;
 				}
@@ -523,5 +563,38 @@ footer {
 		p {
 			font-size: 1.2em;
 		}
+	}
+
+	//random blends of sounds
+
+	#random-blend-of-sounds-wrapper {
+		padding: 0;
+		#random-blend-of-sounds-content {
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+
+			#random-blend-of-sounds-splash {
+				position: relative;
+			}
+			h5 {
+				position: absolute;
+				font-size: 1.8em;
+				width: 100%;
+				margin: 0;
+				bottom: 120px;
+			}
+
+			.site-default-button {
+				position: absolute;
+				width: 400px;
+				bottom: 40px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+		}
+		padding: 0;
+
 	}
 }

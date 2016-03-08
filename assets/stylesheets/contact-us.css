@@ -1,0 +1,66 @@
+/* line 1, ../sass/contact-us.scss */
+#contact-us-wrapper {
+  position: relative;
+  background: url("../images/header-pic-small.jpg") center;
+  background-size: cover;
+  height: 400px;
+}
+/* line 6, ../sass/contact-us.scss */
+#contact-us-wrapper img {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 15, ../sass/contact-us.scss */
+#contact-us-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 21, ../sass/contact-us.scss */
+#contact-us-wrapper .social-buttons-wrapper {
+  margin-top: 40px;
+}
+/* line 23, ../sass/contact-us.scss */
+#contact-us-wrapper .social-buttons-wrapper .social {
+  color: black;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 373px) {
+  /* line 31, ../sass/contact-us.scss */
+  #contact-us-wrapper {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 37, ../sass/contact-us.scss */
+  .social {
+    vertical-align: center;
+    font-size: 2.6em;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  /* line 45, ../sass/contact-us.scss */
+  #contact-us-wrapper img {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 52, ../sass/contact-us.scss */
+  .social {
+    vertical-align: center;
+    font-size: 3em;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  /* line 60, ../sass/contact-us.scss */
+  #contact-us-wrapper img {
+    width: 450px;
+  }
+}
