@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<title>Random Blends 2016 | Contact Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- STYLESHEETS -->
+<!-- Boostrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display' rel='stylesheet' type='text/css'>
+<!-- Social Button -->
+<link rel="stylesheet" href="assets/stylesheets/social-button-styles.css">
+<!-- Our Stylesheets -->
+<link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
+<link rel="stylesheet" href="assets/stylesheets/visit.css" type='text/css'>
+
+<!-- JQuery -->
+<script src="assets/javascripts/jquery-2.2.1.min.js"></script>
+<script src="assets/javascripts/oridomi.min.js"></script>
+
+<!-- JAVASCRIPTS -->
+<script src="assets/javascripts/navbar.js"></script>
+
+<!-- Boostrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Our Javascripts -->
+
+</head>
+<body>
+<!-- Menu Button -->
+<button class="site-menu-expand-button site-menu-button">
+	<div class="empty-container"></div>
+	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+</button>
+<!-- Folding Menu -->
+<div class="site-menu-wrapper">
+	<div class="site-menu">
+		<h1 class="header-font site-menu-header underline">Menu</h1>
+		<ul class="site-menu-list">
+			<!-- IMPORTANT WHEN ADDING: CHANGE THE FIRST CLASS OF EACH ITEM ACCORDINGLY -->
+			<a href="./index.html#explore"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
+			<a href="./index.html#play"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
+			<a href="./index.html#learn"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
+			<a href="./contact-us.html"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
+			<a href="./contact-us.html#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
+		</ul>
+		<button class="site-menu-collapse-button site-menu-button">
+			<div class="empty-container"></div>
+			<span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+		</button>
+	</div>
+</div>
+
+<!-- START HERE -->
+<!-- <article id="plan-your-visit-wrapper" class="site-content-block"> 
+	<h2 id="plan-your-visit-header">Plan Your Visit</h2>
+</article> -->
+
+<article id="plan-your-visit-wrapper" class="site-content-block">
+		<div class="site-menu">
+	<h2 class="header-font site-content-block-title underline">Getting Here</h2>
+	<img id="map-asm" src="assets/images/map-asm.jpg">
+		</div>
+
+	<div class="asm-info">
+
+		<h4>ArtScience Museum is in Marina Bay Sands, along the Marina Bay waterfront and easily accessible via public transport and car. Once at Marina Bay Sands, the Museum is located along the north Promenade, within walking distance from The Shoppes at Marina Bay Sands and the Helix Bridge. The Museum's main lobby is on the ground level.<h4>
+
+		<h3>Operating Hours</h3>
+			<h4>Daily: 10:00am - 7:00pm
+	        </br>Including public holidays
+			</br>Last admission at 6:00pm</h4>
+
+		<h3>MRT</h3>
+			<h4>Bayfront Station (Circle Line) - 10-minute walk
+		    </br>Promenade Station (Circle Line) - 15-minute walk
+		    </br>Marina Bay Station (North South Line) - 15-minute walk</h4>
+
+	    <h3>Bus (Bus stop at Bayfront Avenue)</h3>
+		    <h4>SBS: 97, 97E, 133, 133M, 502, 518
+		    </br>SMRT: 106
+		    </h4>
+
+	    <h3>Taxi</h3>
+	    	<h4>Pick-up and drop-off near The Shoppes at Marina Bay Sands, along Bayfront Avenue via Raffles Boulevard or Marina Boulevard.</h4>
+
+	    <h3>Car</h3>
+	    	<h4>The nearest car park is the North Car Park at Marina Bay Sands. The car park entrance is located at Sands Expo and Convention Centre, via Bayfront Link.</h4> 
+
+	</div>
+</article>
+
+
+
+
+
+
+
+<!-- <div id="map"></div>
+ -->
+<script>
+//   function initMap() {
+//   	var mapDiv = document.getElementById('map');
+//   	var myLatLng = {lat: 1.286331, lng: 103.859223};
+//     var map = new google.maps.Map(mapDiv, {
+// 	    center: myLatLng,
+// 	    zoom: 17,
+// 	    scrollwheel: false,
+// 	    navigationControl: false,
+// 	    mapTypeControl: false,
+// 	    scaleControl: false,
+// 	    draggable: false,
+//     });
+
+//     var marker = new google.maps.Marker({
+// 	    position: myLatLng,
+// 	    map: map,
+// 	    title: 'ArtScience Museum'
+//   	});
+//   }
+// </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+          async defer></script>
+
+
+
+
+
+
+<footer>
+	<div class="sponsors-wrapper">
+		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
+		<div class="sponsors-image-wrapper">
+			<img src="./assets/images/rb-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/nus-cnm-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/asm-logo.png" class="site-sponsor-logo">
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
