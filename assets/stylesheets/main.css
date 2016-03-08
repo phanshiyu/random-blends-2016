@@ -389,7 +389,7 @@ footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
   }
   /* line 428, ../sass/main.scss */
   footer .sponsors-wrapper .sponsors-image-wrapper {
-    width: 390px;
+    width: 260px;
   }
   /* line 431, ../sass/main.scss */
   footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
@@ -461,26 +461,43 @@ footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
     font-size: 1.7em;
   }
   /* line 513, ../sass/main.scss */
-  footer .sponsors-wrapper .sponsors-image-wrapper {
-    width: 480px;
+  footer .sponsors-wrapper .cnm-image-wrapper {
+    width: 840px;
+    position: relative;
+    margin: auto;
+    height: 20vh;
   }
-  /* line 516, ../sass/main.scss */
-  footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
-    width: 130px;
+  /* line 519, ../sass/main.scss */
+  footer .sponsors-wrapper .cnm-image-wrapper .cnm-logo {
+    width: 780px;
+    margin: 0 15px 0 15px;
+  }
+  /* line 525, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper {
+    width: 420px;
+  }
+  /* line 529, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper .asm-logo {
+    width: 390px;
+    margin: 0 15px 0 15px;
+  }
+  /* line 533, ../sass/main.scss */
+  footer .sponsors-wrapper .sponsors-image-wrapper .epson-logo {
+    width: 195px;
     margin: 0 15px 0 15px;
   }
 
-  /* line 524, ../sass/main.scss */
+  /* line 541, ../sass/main.scss */
   .site-menu-button {
     display: none !important;
   }
 
-  /* line 528, ../sass/main.scss */
+  /* line 545, ../sass/main.scss */
   .full-navbar {
     display: block;
   }
 
-  /* line 532, ../sass/main.scss */
+  /* line 549, ../sass/main.scss */
   .site-large-wrapper {
     position: relative;
     width: 350px;
@@ -490,14 +507,14 @@ footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
     height: 430px;
     display: inline-block;
   }
-  /* line 540, ../sass/main.scss */
+  /* line 557, ../sass/main.scss */
   .site-large-wrapper .site-large-image-wrapper {
     overflow: hidden;
     width: 98%;
     width: auto;
     height: 180px;
   }
-  /* line 545, ../sass/main.scss */
+  /* line 562, ../sass/main.scss */
   .site-large-wrapper .site-large-image-wrapper img {
     position: relative;
     top: 50%;
@@ -505,32 +522,32 @@ footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
     width: 100%;
     height: auto;
   }
-  /* line 558, ../sass/main.scss */
+  /* line 575, ../sass/main.scss */
   .site-large-wrapper h3 {
     margin-top: 10%;
     font-size: 1.8em;
   }
-  /* line 563, ../sass/main.scss */
+  /* line 580, ../sass/main.scss */
   .site-large-wrapper p {
     font-size: 1.2em;
   }
 
-  /* line 570, ../sass/main.scss */
+  /* line 587, ../sass/main.scss */
   #random-blend-of-sounds-wrapper {
     padding: 0;
     padding: 0;
   }
-  /* line 572, ../sass/main.scss */
+  /* line 589, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content {
     position: relative;
     overflow: hidden;
     text-align: center;
   }
-  /* line 577, ../sass/main.scss */
+  /* line 594, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content #random-blend-of-sounds-splash {
     position: relative;
   }
-  /* line 580, ../sass/main.scss */
+  /* line 597, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content h5 {
     position: absolute;
     font-size: 1.8em;
@@ -538,7 +555,7 @@ footer .sponsors-wrapper .sponsors-image-wrapper .site-sponsor-logo {
     margin: 0;
     bottom: 120px;
   }
-  /* line 588, ../sass/main.scss */
+  /* line 605, ../sass/main.scss */
   #random-blend-of-sounds-wrapper #random-blend-of-sounds-content .site-default-button {
     position: absolute;
     width: 400px;
