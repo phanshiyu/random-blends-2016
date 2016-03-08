@@ -64,7 +64,7 @@
 	<img src="./assets/images/logo-white.png">
 </article>
 
-<div id="map"></div>
+<!-- <div id="map"></div> -->
 
 <footer>
 	<div class="sponsors-wrapper">
@@ -77,27 +77,27 @@
 	</div>
 </footer>
 
-<script>
-  function initMap() {
-  	var mapDiv = document.getElementById('map');
-  	var myLatLng = {lat: 1.286331, lng: 103.859223};
-    var map = new google.maps.Map(mapDiv, {
-	    center: myLatLng,
-	    zoom: 17,
-	    scrollwheel: false,
-	    navigationControl: false,
-	    mapTypeControl: false,
-	    scaleControl: false,
-	    draggable: false,
-    });
+// <script>
+//   function initMap() {
+//   	var mapDiv = document.getElementById('map');
+//   	var myLatLng = {lat: 1.286331, lng: 103.859223};
+//     var map = new google.maps.Map(mapDiv, {
+// 	    center: myLatLng,
+// 	    zoom: 17,
+// 	    scrollwheel: false,
+// 	    navigationControl: false,
+// 	    mapTypeControl: false,
+// 	    scaleControl: false,
+// 	    draggable: false,
+//     });
 
-    var marker = new google.maps.Marker({
-	    position: myLatLng,
-	    map: map,
-	    title: 'ArtScience Museum'
-  	});
-  }
-</script>
+//     var marker = new google.maps.Marker({
+// 	    position: myLatLng,
+// 	    map: map,
+// 	    title: 'ArtScience Museum'
+//   	});
+//   }
+// </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
          async defer></script>
