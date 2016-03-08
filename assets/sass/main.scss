@@ -368,6 +368,7 @@ a {
 	}
 }
 
+
 footer {
 	position: relative;
 	background-color: white;
@@ -390,18 +391,36 @@ footer {
 			font-size: 1.5em;
 		}
 
+		.cnm-image-wrapper {
+			width: $sponsorImageWrapperWidth;
+			position: relative;
+			margin: auto;
+			height: 15vh;
+
+			.cnm-logo {
+				width: $sponsorImageWidth*3;
+				margin: 0 15px 0 15px;
+			}
+		}
+
 		.sponsors-image-wrapper {
 			position: relative;
 			width: $sponsorImageWrapperWidth;
 			margin: auto;
 			height: 25vh;
 
-			.site-sponsor-logo {
-				float: left;
+			.asm-logo {
 				top: 50%;
 				position: relative;
 				transform: translateY(-50%);
-				width: $sponsorImageWidth;
+				width: $sponsorImageWidth*3;
+				margin: 0 5px 0 5px;
+			}
+			.epson-logo {
+				top: 50%;
+				position: relative;
+				transform: translateY(-50%);
+				width: $sponsorImageWidth*2;
 				margin: 0 5px 0 5px;
 			}
 		}
@@ -511,7 +530,7 @@ footer {
 			}
 
 			.cnm-image-wrapper {
-				width: $sponsorImageWrapperWidth*2;
+				width: $sponsorImageWrapperWidth;
 				position: relative;
 				margin: auto;
 				height: 20vh;
