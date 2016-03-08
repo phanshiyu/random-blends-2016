@@ -223,6 +223,10 @@ a {
 	overflow: hidden;
 	text-align: center;
 	padding: 15px 10px 20px 10px;
+
+	.site-large-wrapper p {
+		padding: 10px;
+	}
 }
 
 // LOGO
@@ -308,7 +312,7 @@ a {
 	margin: 0 auto 20px auto;
 	background-color: #e6e5e0;
 	color: black;
-	height: 400px;
+	height: 450px;
 	display: inline-block;
 	.site-large-image-wrapper {
 		overflow: hidden;
@@ -368,6 +372,7 @@ a {
 	}
 }
 
+
 footer {
 	position: relative;
 	background-color: white;
@@ -390,18 +395,36 @@ footer {
 			font-size: 1.5em;
 		}
 
+		.cnm-image-wrapper {
+			width: $sponsorImageWrapperWidth;
+			position: relative;
+			margin: auto;
+			height: 15vh;
+
+			.cnm-logo {
+				width: $sponsorImageWidth*3;
+				margin: 0 15px 0 15px;
+			}
+		}
+
 		.sponsors-image-wrapper {
 			position: relative;
 			width: $sponsorImageWrapperWidth;
 			margin: auto;
 			height: 25vh;
 
-			.site-sponsor-logo {
-				float: left;
+			.asm-logo {
 				top: 50%;
 				position: relative;
 				transform: translateY(-50%);
-				width: $sponsorImageWidth;
+				width: $sponsorImageWidth*3;
+				margin: 0 5px 0 5px;
+			}
+			.epson-logo {
+				top: 50%;
+				position: relative;
+				transform: translateY(-50%);
+				width: $sponsorImageWidth*2;
 				margin: 0 5px 0 5px;
 			}
 		}
@@ -413,13 +436,14 @@ footer {
 @media screen and (min-width: 490px) {
 	.site-content-block-title {
 		font-size: 2.5em;
+		margin-bottom: 40px;
 	}
 
 	footer {
 		height: 250px;
 		$sponsorImageWidth: 110px;
 		$sponsorLogoTotalWidth: $sponsorImageWidth + (10px * 2);
-		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth*3;
+		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth*2;
 		.sponsors-wrapper {
 			h2 {
 				font-size: 1.7em;
@@ -441,6 +465,7 @@ footer {
 @media screen and (min-width: 624px) {
 	.site-content-block-title {
 		font-size: 2.7em;
+		margin-bottom: 40px;
 	}
 
 	#site-logo-wrapper {
@@ -496,25 +521,43 @@ footer {
 	}
 	.site-content-block-title {
 		font-size: 2.8em;
+		margin-bottom: 40px;
 	}
 
 	#site-logo-wrapper {
 		background: url('../images/header-pic.jpg') center;
 	}
 	footer {
-		$sponsorImageWidth: 130px;
+		$sponsorImageWidth: 390px;
 		$sponsorLogoTotalWidth: $sponsorImageWidth + (15px * 2);
-		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth*3;
+		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth;
 		.sponsors-wrapper {
 			h2 {
 				font-size: 1.7em;
 			}
 
+			.cnm-image-wrapper {
+				width: $sponsorImageWrapperWidth*2;
+				position: relative;
+				margin: auto;
+				height: 20vh;
+
+				.cnm-logo {
+					width: $sponsorImageWidth*2;
+					margin: 0 15px 0 15px;
+				}
+			}
+
 			.sponsors-image-wrapper {
 				width: $sponsorImageWrapperWidth;
 
-				.site-sponsor-logo {
+
+				.asm-logo {
 					width: $sponsorImageWidth;
+					margin: 0 15px 0 15px;
+				}
+				.epson-logo {
+					width: 0.5*$sponsorImageWidth;
 					margin: 0 15px 0 15px;
 				}
 			}
