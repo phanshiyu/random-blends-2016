@@ -12,9 +12,7 @@
 <link rel="stylesheet" href="assets/stylesheets/social-button-styles.css">
 <!-- Our Stylesheets -->
 <link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
-<link rel="stylesheet" href="assets/stylesheets/coming-soon.css" type='text/css'>
-<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
-
+<link rel="stylesheet" href="assets/stylesheets/featured-artists.css" type='text/css'>
 
 <!-- JQuery -->
 <script src="assets/javascripts/jquery-2.2.1.min.js"></script>
@@ -44,7 +42,7 @@
 			<a href="./index.html#explore"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
 			<a href="./index.html#play"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
 			<a href="./index.html#learn"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
-			<a href="./contact-us.html"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
+			<a class="selected" href="./contact-us.html"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
 			<a href="./contact-us.html#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
 		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
@@ -55,23 +53,53 @@
 </div>
 
 <!-- START HERE -->
-<article id="coming-soon-wrapper" class="site-content-block"> 
-	<h2 id="coming-soon-header">Coming Soon... <br>Please stay tuned!</h2>
-</article>
+
+<article id="Featured-Artist" class="site-content-block"> 
+
+	<h2 class="header-font site-content-block-title underline">Featured Artists</h2>
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/bao-xiao.jpg">
+		</div>
+		<h3 class="header-font">Bao Xiao</h3>
+		<p>He's awesome and is a Xiao Long Bao Masterchef</p>
+	</div>
+
+	<div class="site-large-wrapper">
+		<iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/3gv805Yvms0"></iframe>
+		<p>In this interview, Bao Xiao talks about how he makes the best Xiao Long Bao. HAHA</p>
+	</div>
+
+</article> 
+
+<article id="Featured-Artist-2" class="site-content-block"> 
+
+	<div class="site-large-wrapper">
+		<div class="site-large-image-wrapper">
+			<img src="./assets/images/hafiz.jpg">
+		</div>
+		<h3 class="header-font">Hafiiz</h3>
+		<p>Yo yo. I'm Hafiiz with a double ii</p>
+	</div>
+
+	<div class="site-large-wrapper">
+		<iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/3gv805Yvms0"></iframe>
+		<p>In this interview, Hafiiz talks about how he can't eat Xiao Long Bao, because tak halal siol</p>
+	</div>
+
+</article> 
+
+
+
+
 
 <footer>
 	<div class="sponsors-wrapper">
 		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
-		<div class="cnm-image-wrapper">
-			<img src="./assets/images/nus-cnm-logo.png" class="cnm-logo">
-		</div>
-		<h2 class="header-font">VENUE SPONSOR:</h2>
 		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/asm-logo.png" class="asm-logo">
-		</div>
-		<h2 class="header-font">OFFICIAL PROJECTOR SPONSOR:</h2>
-		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/epson-logo.jpg" class="epson-logo">
+			<img src="./assets/images/rb-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/nus-cnm-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/asm-logo.png" class="site-sponsor-logo">
 		</div>
 	</div>
 </footer>

@@ -13,6 +13,14 @@ $default-button-hover-color: #6f8486;
 
 $navbar-height: 43px;
 
+@mixin transform($value) {
+	-webkit-transform: $value;
+	-moz-transform:    $value;
+	-ms-transform:     $value;
+	-o-transform:      $value;
+	transform:         $value;
+}
+
 // We first handle the smaller screen sizes, starting with iphone
 body {
 	font-family: $default-font;
@@ -31,27 +39,16 @@ a {
 	display: inline-block;
 	text-align: center;
 	background-color: $site-menu-button-color;
-
-	&:before{
-		content: "";
-		display: block;
-		margin-top: 100%;
-	}
-	.empty-container {
-		position: absolute;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;   
-	}
+	width: 42px;
+	height: 42px;
 
 	.glyphicon {
 		margin: auto;
-	    font-size: 3em;
+	    font-size: large;
 	    position: absolute;
 	    top: 50%;
-		transform: translate(-50%,-50%);
-		// transform: translateX(50%);
+		@include transform(translate(-50%,-50%));
+		// @include transform(translateX(50%));
 	}
 
 	&:hover {
@@ -62,7 +59,6 @@ a {
 // Site menu
 .site-menu-expand-button {
 	display: none;
-	width: 42px;
 	color: white;
 	padding: 10px;
 	position: fixed;
@@ -87,6 +83,7 @@ a {
 		height: 100vh;
 		background-color: $menu-color;
 		.site-menu-header {
+			color: white;
 
 		}
 
@@ -106,7 +103,7 @@ a {
 			padding: 0;
 			height: 30vh;
 			.site-menu-item {
-				color: black;
+				color: white;
 				transition: $default-button-transition;
 				// background-color: white;
 				width: 70%;
@@ -141,16 +138,18 @@ a {
 		position: relative;
 		width: 100%;
 		// margin: auto;
+		padding: 0;
 		display: inline-block;
 		top: 50%;
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		list-style-type: none;
 		a {
 			display: inline-block;
-			color: black;
+			color: white;
 			transition: $default-button-transition;
 			// background-color: white;
-			padding: 0.5%;
+			// padding: 0.5%;
+			padding: 0px 20px 0px 20px;
 			margin: 15px auto 15px auto;
 			border-left: 1px solid #92a9ac;
 			&:hover {
@@ -223,23 +222,27 @@ a {
 	overflow: hidden;
 	text-align: center;
 	padding: 15px 10px 20px 10px;
+
+	.site-large-wrapper p {
+		padding: 10px;
+	}
 }
 
 // LOGO
 #site-logo-wrapper {
 	background: url('../images/header-pic-small.jpg') center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
 	height: 500px;
 	color: black;
 
 	#site-logo-content {
 		position: relative;
 		top: 50%;
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 
 		#site-logo {
 			width: 100%;
@@ -308,7 +311,7 @@ a {
 	margin: 0 auto 20px auto;
 	background-color: #e6e5e0;
 	color: black;
-	height: 400px;
+	height: 450px;
 	display: inline-block;
 	.site-large-image-wrapper {
 		overflow: hidden;
@@ -318,7 +321,7 @@ a {
 		img {
 			position: relative;
 			top: 50%;
-			transform: translateY(-50%);
+			@include transform(translateY(-50%));
 			width: 100%;
 			height: auto;
 		}
@@ -360,13 +363,14 @@ a {
 		#random-blend-of-sounds-splash {
 			display: block;
 			width: 120%;
-			transform: translateX(-10%);
+			@include transform(translateX(-10%));
 		}
 		h5 {
 			font-size: 1.2em;
 		}
 	}
 }
+
 
 footer {
 	position: relative;
@@ -390,18 +394,36 @@ footer {
 			font-size: 1.5em;
 		}
 
+		.cnm-image-wrapper {
+			width: $sponsorImageWrapperWidth;
+			position: relative;
+			margin: auto;
+			height: 15vh;
+
+			.cnm-logo {
+				width: $sponsorImageWidth*3;
+				margin: 0 15px 0 15px;
+			}
+		}
+
 		.sponsors-image-wrapper {
 			position: relative;
 			width: $sponsorImageWrapperWidth;
 			margin: auto;
 			height: 25vh;
 
-			.site-sponsor-logo {
-				float: left;
+			.asm-logo {
 				top: 50%;
 				position: relative;
-				transform: translateY(-50%);
-				width: $sponsorImageWidth;
+				@include transform(translateY(-50%));
+				width: $sponsorImageWidth*3;
+				margin: 0 5px 0 5px;
+			}
+			.epson-logo {
+				top: 50%;
+				position: relative;
+				@include transform(translateY(-50%));
+				width: $sponsorImageWidth*2;
 				margin: 0 5px 0 5px;
 			}
 		}
@@ -413,13 +435,14 @@ footer {
 @media screen and (min-width: 490px) {
 	.site-content-block-title {
 		font-size: 2.5em;
+		margin-bottom: 40px;
 	}
 
 	footer {
 		height: 250px;
 		$sponsorImageWidth: 110px;
 		$sponsorLogoTotalWidth: $sponsorImageWidth + (10px * 2);
-		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth*3;
+		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth*2;
 		.sponsors-wrapper {
 			h2 {
 				font-size: 1.7em;
@@ -441,6 +464,7 @@ footer {
 @media screen and (min-width: 624px) {
 	.site-content-block-title {
 		font-size: 2.7em;
+		margin-bottom: 40px;
 	}
 
 	#site-logo-wrapper {
@@ -496,25 +520,44 @@ footer {
 	}
 	.site-content-block-title {
 		font-size: 2.8em;
+		margin-bottom: 40px;
 	}
 
 	#site-logo-wrapper {
 		background: url('../images/header-pic.jpg') center;
+		background-size: 100%;
 	}
 	footer {
-		$sponsorImageWidth: 130px;
+		$sponsorImageWidth: 390px;
 		$sponsorLogoTotalWidth: $sponsorImageWidth + (15px * 2);
-		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth*3;
+		$sponsorImageWrapperWidth: $sponsorLogoTotalWidth;
 		.sponsors-wrapper {
 			h2 {
 				font-size: 1.7em;
 			}
 
+			.cnm-image-wrapper {
+				width: $sponsorImageWrapperWidth*2;
+				position: relative;
+				margin: auto;
+				height: 20vh;
+
+				.cnm-logo {
+					width: $sponsorImageWidth*2;
+					margin: 0 15px 0 15px;
+				}
+			}
+
 			.sponsors-image-wrapper {
 				width: $sponsorImageWrapperWidth;
 
-				.site-sponsor-logo {
+
+				.asm-logo {
 					width: $sponsorImageWidth;
+					margin: 0 15px 0 15px;
+				}
+				.epson-logo {
+					width: 0.5*$sponsorImageWidth;
 					margin: 0 15px 0 15px;
 				}
 			}
@@ -545,7 +588,7 @@ footer {
 			img {
 				position: relative;
 				top: 50%;
-				transform: translateY(-50%);
+				@include transform(translateY(-50%));
 				width: 100%;
 				height: auto;
 			}
@@ -590,7 +633,7 @@ footer {
 				width: 400px;
 				bottom: 40px;
 				left: 50%;
-				transform: translateX(-50%);
+				@include transform(translateX(-50%));
 			}
 
 		}

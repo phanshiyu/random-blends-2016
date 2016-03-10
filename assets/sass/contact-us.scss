@@ -1,8 +1,16 @@
+body {
+	background-color: white;
+}
+
+#map {
+	margin-bottom: 50px;
+}
+
 #contact-us-wrapper {
 	position: relative;
 	background: url('../images/header-pic-small.jpg') center;
 	background-size: cover;
-	height: 400px;
+	height: 500px;
 	img {
 		width: 70%;
 		position: absolute;

@@ -1,0 +1,19 @@
+/* line 1, ../sass/visit.scss */
+#map-asm {
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+
+/* line 8, ../sass/visit.scss */
+.asm-info {
+  text-align: left;
+  padding: 10px;
+}
+
+/* line 13, ../sass/visit.scss */
+body {
+  background-color: white;
+}

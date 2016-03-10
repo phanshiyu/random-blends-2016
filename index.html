@@ -9,6 +9,7 @@
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display' rel='stylesheet' type='text/css'>
 <!-- Our Stylesheets -->
 <link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
+<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
 
 <!-- JQuery -->
 <script src="assets/javascripts/jquery-2.2.1.min.js"></script>
@@ -26,7 +27,6 @@
 <body>
 <!-- Menu Button -->
 <button class="site-menu-expand-button site-menu-button">
-	<div class="empty-container"></div>
 	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 </button>
 <!-- Folding Menu -->
@@ -35,14 +35,14 @@
 		<h1 class="header-font site-menu-header underline">Menu</h1>
 		<ul class="site-menu-list">
 			<!-- IMPORTANT WHEN ADDING: CHANGE THE FIRST CLASS OF EACH ITEM ACCORDINGLY -->
-			<a href="./index.html#explore"><li class="item-one site-menu-item"><h4>Explore</h4></li></a>
-			<a href="./index.html#play"><li class="item-two site-menu-item"><h4>Play</h4></li></a>
-			<a href="./index.html#learn"><li class="item-three site-menu-item"><h4>Learn</h4></li></a>
-			<a href="./contact-us.html"><li class="item-four site-menu-item"><h4>Contact Us</h4></li></a>
-			<a href="./contact-us.html#map"><li class="item-five site-menu-item"><h4>Getting Here</h4></li></a>
+			<a href="./index.html"><li class="item-one site-menu-item"><h4>Home</h4></li></a>
+			<a href="./index.html#explore"><li class="item-two site-menu-item"><h4>Explore</h4></li></a>
+			<a href="./index.html#play"><li class="item-three site-menu-item"><h4>Play</h4></li></a>
+			<a href="./index.html#learn"><li class="item-four site-menu-item"><h4>Learn</h4></li></a>
+			<a href="./contact-us.html"><li class="item-five site-menu-item"><h4>Contact Us</h4></li></a>
+			<a href="./visit.html"><li class="item-six site-menu-item"><h4>Getting Here</h4></li></a>
 		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
-			<div class="empty-container"></div>
 			<span class="glyphicon glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
 		</button>
 	</div>
@@ -52,9 +52,10 @@
 	<div id="site-logo-content">
 		<img id="site-logo" src="assets/images/random-blends.png">
 		<h4>A student showcase of digital media and interactive art</h2>
-		<h5>25-27 March | 10am - 7pm (Last Admission 6PM)<br> 
+		<h5>24 March | 4pm - 10pm (Last Admission at 9PM)<br>
+			25-27 March | 10am - 7pm (Last Admission at 6PM)<br> 
 			ArtScience Museum | Free Admission</h5>
-		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">Plan Your Visit</button>
+		<button onclick="window.location.href='./visit.html'" class="site-default-button">Plan Your Visit</button>
 	</div>
 </article>
 
@@ -112,10 +113,16 @@
 <footer>
 	<div class="sponsors-wrapper">
 		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
+		<div class="cnm-image-wrapper">
+			<img src="./assets/images/nus-cnm-logo.png" class="cnm-logo">
+		</div>
+		<h2 class="header-font">VENUE SPONSOR:</h2>
 		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/rb-logo.png" class="site-sponsor-logo">
-			<img src="./assets/images/nus-cnm-logo.png" class="site-sponsor-logo">
-			<img src="./assets/images/asm-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/asm-logo.png" class="asm-logo">
+		</div>
+		<h2 class="header-font">OFFICIAL PROJECTOR SPONSOR:</h2>
+		<div class="sponsors-image-wrapper">
+			<img src="./assets/images/epson-logo.jpg" class="epson-logo">
 		</div>
 	</div>
 </footer>

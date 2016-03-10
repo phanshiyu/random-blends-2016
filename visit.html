@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="assets/stylesheets/social-button-styles.css">
 <!-- Our Stylesheets -->
 <link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
-<link rel="stylesheet" href="assets/stylesheets/contact-us.css" type='text/css'>
+<link rel="stylesheet" href="assets/stylesheets/visit.css" type='text/css'>
 <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
 
 
@@ -45,8 +45,8 @@
 			<a href="./index.html#explore"><li class="item-two site-menu-item"><h4>Explore</h4></li></a>
 			<a href="./index.html#play"><li class="item-three site-menu-item"><h4>Play</h4></li></a>
 			<a href="./index.html#learn"><li class="item-four site-menu-item"><h4>Learn</h4></li></a>
-			<a class="selected" href="./contact-us.html"><li class="item-five site-menu-item"><h4>Contact Us</h4></li></a>
-			<a href="./visit.html"><li class="item-six site-menu-item"><h4>Getting Here</h4></li></a>
+			<a href="./contact-us.html"><li class="item-five site-menu-item"><h4>Contact Us</h4></li></a>
+			<a class="selected" href="./visit.html"><li class="item-six site-menu-item"><h4>Getting Here</h4></li></a>
 		</ul>
 		<button class="site-menu-collapse-button site-menu-button">
 			<div class="empty-container"></div>
@@ -56,39 +56,53 @@
 </div>
 
 <!-- START HERE -->
-<article id="contact-us-wrapper" class="site-content-block"> 
-	<h2 class="header-font site-content-block-title underline">Contact Us</h2>
-	<div class="social-buttons-wrapper">
-		<a href="https://www.facebook.com/randomblends"><div class="social">&#62220;</div></a>
-		<a href="https://www.instagram.com/randomblends2016/"><div class="social">&#62253;</div></a>
-		<a href="https://twitter.com/random_blends"><div class="social">&#62217;</div></a>
-		  <div class="social">&#9993;</div>
+<!-- <article id="plan-your-visit-wrapper" class="site-content-block"> 
+	<h2 id="plan-your-visit-header">Plan Your Visit</h2>
+</article> -->
+
+<article id="plan-your-visit-wrapper" class="site-content-block">
+		<div class="site-menu">
+	<h2 class="header-font site-content-block-title underline">Getting Here</h2>
+	<img id="map-asm" src="assets/images/map-asm.jpg">
+		</div>
+
+	<div class="asm-info">
+
+		<h4>ArtScience Museum is in Marina Bay Sands, along the Marina Bay waterfront and easily accessible via public transport and car. Once at Marina Bay Sands, the Museum is located along the north Promenade, within walking distance from The Shoppes at Marina Bay Sands and the Helix Bridge. The Museum's main lobby is on the ground level.<h4>
+
+		<h3>Operating Hours</h3>
+			<h4>Daily: 10:00am - 7:00pm
+	        </br>Including public holidays
+			</br>Last admission at 6:00pm</h4>
+
+		<h3>MRT</h3>
+			<h4>Bayfront Station (Circle Line)</br>-10-minute walk
+		    </br>Promenade Station (Circle Line)</br>-15-minute walk
+		    </br>Marina Bay Station (North South Line)</br>-15-minute walk</h4>
+
+	    <h3>Bus (Bus stop at Bayfront Avenue)</h3>
+		    <h4>SBS: 97, 97E, 133, 133M, 502, 518
+		    </br>SMRT: 106
+		    </h4>
+
+	    <h3>Taxi</h3>
+	    	<h4>Pick-up and drop-off near The Shoppes at Marina Bay Sands, along Bayfront Avenue via Raffles Boulevard or Marina Boulevard.</h4>
+
+	    <h3>Car</h3>
+	    	<h4>The nearest car park is the North Car Park at Marina Bay Sands. The car park entrance is located at Sands Expo and Convention Centre, via Bayfront Link.</h4> 
+
 	</div>
-	<h2>ArtScience Museum<br>6 Bayfront Ave<br>Singapore 018974</h2>
-	<h3>24 March | 4pm - 10pm (Last Admission at 9PM)<br>25-27 March | 10am - 7pm (Last Admission at 6PM)</h3>
-<!-- 	<img src="./assets/images/logo-white.png">
- --></article>
+</article>
 
-<!-- <div id="map"></div> -->
 
-<footer>
-	<div class="sponsors-wrapper">
-		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
-		<div class="cnm-image-wrapper">
-			<img src="./assets/images/nus-cnm-logo.png" class="cnm-logo">
-		</div>
-		<h2 class="header-font">VENUE SPONSOR:</h2>
-		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/asm-logo.png" class="asm-logo">
-		</div>
-		<h2 class="header-font">OFFICIAL PROJECTOR SPONSOR:</h2>
-		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/epson-logo.jpg" class="epson-logo">
-		</div>
-	</div>
-</footer>
 
-// <script>
+
+
+
+
+<!-- <div id="map"></div>
+ -->
+<script>
 //   function initMap() {
 //   	var mapDiv = document.getElementById('map');
 //   	var myLatLng = {lat: 1.286331, lng: 103.859223};
@@ -111,7 +125,25 @@
 // </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-         async defer></script>
+          async defer></script>
+
+
+<footer>
+	<div class="sponsors-wrapper">
+		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
+		<div class="cnm-image-wrapper">
+			<img src="./assets/images/nus-cnm-logo.png" class="cnm-logo">
+		</div>
+		<h2 class="header-font">VENUE SPONSOR:</h2>
+		<div class="sponsors-image-wrapper">
+			<img src="./assets/images/asm-logo.png" class="asm-logo">
+		</div>
+		<h2 class="header-font">OFFICIAL PROJECTOR SPONSOR:</h2>
+		<div class="sponsors-image-wrapper">
+			<img src="./assets/images/epson-logo.jpg" class="epson-logo">
+		</div>
+	</div>
+</footer>
 
 </body>
 </html>
