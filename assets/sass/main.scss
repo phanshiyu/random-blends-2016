@@ -13,6 +13,14 @@ $default-button-hover-color: #6f8486;
 
 $navbar-height: 43px;
 
+@mixin transform($value) {
+	-webkit-transform: $value;
+	-moz-transform:    $value;
+	-ms-transform:     $value;
+	-o-transform:      $value;
+	transform:         $value;
+}
+
 // We first handle the smaller screen sizes, starting with iphone
 body {
 	font-family: $default-font;
@@ -31,27 +39,16 @@ a {
 	display: inline-block;
 	text-align: center;
 	background-color: $site-menu-button-color;
-
-	&:before{
-		content: "";
-		display: block;
-		margin-top: 100%;
-	}
-	.empty-container {
-		position: absolute;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;   
-	}
+	width: 42px;
+	height: 42px;
 
 	.glyphicon {
 		margin: auto;
 	    font-size: large;
 	    position: absolute;
 	    top: 50%;
-		transform: translate(-50%,-50%);
-		// transform: translateX(50%);
+		@include transform(translate(-50%,-50%));
+		// @include transform(translateX(50%));
 	}
 
 	&:hover {
@@ -62,7 +59,6 @@ a {
 // Site menu
 .site-menu-expand-button {
 	display: none;
-	width: 42px;
 	color: white;
 	padding: 10px;
 	position: fixed;
@@ -145,7 +141,7 @@ a {
 		padding: 0;
 		display: inline-block;
 		top: 50%;
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		list-style-type: none;
 		a {
 			display: inline-block;
@@ -246,7 +242,7 @@ a {
 	#site-logo-content {
 		position: relative;
 		top: 50%;
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 
 		#site-logo {
 			width: 100%;
@@ -325,7 +321,7 @@ a {
 		img {
 			position: relative;
 			top: 50%;
-			transform: translateY(-50%);
+			@include transform(translateY(-50%));
 			width: 100%;
 			height: auto;
 		}
@@ -367,7 +363,7 @@ a {
 		#random-blend-of-sounds-splash {
 			display: block;
 			width: 120%;
-			transform: translateX(-10%);
+			@include transform(translateX(-10%));
 		}
 		h5 {
 			font-size: 1.2em;
@@ -419,14 +415,14 @@ footer {
 			.asm-logo {
 				top: 50%;
 				position: relative;
-				transform: translateY(-50%);
+				@include transform(translateY(-50%));
 				width: $sponsorImageWidth*3;
 				margin: 0 5px 0 5px;
 			}
 			.epson-logo {
 				top: 50%;
 				position: relative;
-				transform: translateY(-50%);
+				@include transform(translateY(-50%));
 				width: $sponsorImageWidth*2;
 				margin: 0 5px 0 5px;
 			}
@@ -592,7 +588,7 @@ footer {
 			img {
 				position: relative;
 				top: 50%;
-				transform: translateY(-50%);
+				@include transform(translateY(-50%));
 				width: 100%;
 				height: auto;
 			}
@@ -637,7 +633,7 @@ footer {
 				width: 400px;
 				bottom: 40px;
 				left: 50%;
-				transform: translateX(-50%);
+				@include transform(translateX(-50%));
 			}
 
 		}
