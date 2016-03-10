@@ -13,7 +13,7 @@ body {
   position: relative;
   background: url("../images/header-pic-small.jpg") center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
 }
 /* line 14, ../sass/contact-us.scss */
 #contact-us-wrapper img {
