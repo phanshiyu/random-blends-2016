@@ -16,6 +16,8 @@
 
 #featured-artworks {
 	height: auto;
+	background: url('../images/header-pic-small.jpg') center;
+	background-size: 100%;
 }
 
 
@@ -24,7 +26,6 @@
 	width: auto;
 	padding: 3px;
 	margin-bottom: 3px;
-	background-color: black;
 	.featured-artwork__square {
 		display: block;
 		height: 280px;
@@ -39,8 +40,15 @@
 			top: 50%;
 			@include transform(translateY(-50%));
 
+			.featured-artwork__author {
+				font-size: 1em;
+				margin:0;
+			}
+
 			.featured-artwork__title {
+				font-size: 1.5em;
 				margin: 0;
+				margin-bottom: 4px;
 
 			}
 		}
@@ -53,8 +61,24 @@
 	}
 
 	.featured-artwork__image {
-		background-image: url(../images/featured-artworks/hafizz.jpg);
-		@include background-size-cover();
+		// background-image: url(../images/featured-artworks/hafizz.jpg);
+		// @include background-size-cover();
+		img {
+			width: 100%;
+		}
+
+		#neighbourhood-gif {
+			position: relative;
+			left:-50%;
+			height: 100%;
+		 	width: auto;
+		}
+		#lethargy-gif {
+			position: relative;
+			left:-50%;
+			height: 100%;
+		 	width: auto;
+		}
 	}
 }
 
@@ -68,6 +92,11 @@
 }
 
 @media screen and (min-width: 650px) {
+	#featured-artworks {
+		background: url('../images/header-pic.jpg') center;
+		background-size: 100%;
+	}
+
 	.featured-artwork-block {
 		.featured-artwork__square {
 			float: left;
