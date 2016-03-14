@@ -24,6 +24,7 @@ $navbar-height: 43px;
 // We first handle the smaller screen sizes, starting with iphone
 body {
 	font-family: $default-font;
+	background-color: white;
 
 }
 a {
@@ -371,6 +372,9 @@ a {
 	}
 }
 
+.interactive-map-wrapper {
+}
+
 
 footer {
 	position: relative;
@@ -641,3 +645,10 @@ footer {
 
 	}
 }
+
+.jvectormap-region {
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+

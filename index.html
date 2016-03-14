@@ -10,13 +10,19 @@
 <!-- Our Stylesheets -->
 <link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
 <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+<!-- JQuery Vector Map -->
+<link rel="stylesheet" href="assets/stylesheets/jquery-jvectormap-2.0.3.css" type="text/css">
 
 <!-- JQuery -->
 <script src="assets/javascripts/jquery-2.2.1.min.js"></script>
 <script src="assets/javascripts/oridomi.min.js"></script>
 
 <!-- JAVASCRIPTS -->
+<script src="assets/javascripts/jquery-jvectormap-2.0.1.min.js"></script>
+<script type="text/javascript" src="assets/javascripts/maps/rb-map.js" charset="utf-8"></script>
+
 <script src="assets/javascripts/navbar.js"></script>
+<script src="assets/javascripts/interactive-map.js"</script>
 
 <!-- Boostrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -76,7 +82,12 @@
 		</div>
 		<h3 class="header-font">Featured Artworks</h3>
 		<p>The 2016 Random Blends Featured Artists embody a range of medium and techniques. Find out more about these featured artworks.</p>
-		<button onclick="window.location.href='./coming-soon.html'" class="site-default-button">View</button>
+		<button onclick="window.location.href='./featured-artworks.html'" class="site-default-button">View</button>
+	</div>
+
+	<h2 class="header-font site-content-block-title underline">Site Map</h2>
+	<div id="interactive-map" style="width: 100%; height: 400px"></div>
+	
 	</div>
 </article>
 
@@ -128,30 +139,6 @@
 </footer>
 
 <!-- <div id="map"></div> -->
-<script>
-//   function initMap() {
-//   	var mapDiv = document.getElementById('map');
-//   	var myLatLng = {lat: 1.286331, lng: 103.859223};
-//     var map = new google.maps.Map(mapDiv, {
-// 	    center: myLatLng,
-// 	    zoom: 17,
-// 	    scrollwheel: false,
-// 	    navigationControl: false,
-// 	    mapTypeControl: false,
-// 	    scaleControl: false,
-// 	    draggable: false,
-//     });
-
-//     var marker = new google.maps.Marker({
-// 	    position: myLatLng,
-// 	    map: map,
-// 	    title: 'ArtScience Museum'
-//   	});
-//   }
-// </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-         async defer></script>
 
 
 
