@@ -620,3 +620,8 @@ footer .sponsors-wrapper .sponsors-image-wrapper .epson-logo {
     transform: translateX(-50%);
   }
 }
+/* line 649, ../sass/main.scss */
+.jvectormap-region {
+  stroke: black;
+  stroke-width: 0.5;
+}
