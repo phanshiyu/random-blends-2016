@@ -118,10 +118,11 @@ $(document).ready(function() {
 			// Get exhibit object
 			var exhibitObject = exhibitsData[exhibitNumber];
 			hoverLabelRawHtml = generateHoverLabelFromTemplate(exhibitObject);
-		} 
 
-
-		label.html(hoverLabelRawHtml);
+			label.html(hoverLabelRawHtml);
+		} else {
+			event.preventDefault();
+		}
 	}
 
 	
