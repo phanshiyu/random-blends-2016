@@ -1,0 +1,19 @@
+/* line 3, ../sass/interactive-map.scss */
+.jvectormap-tip {
+  height: auto !important;
+  border: 0 !important;
+  font-family: "Josefin Sans", serif !important;
+}
+/* line 10, ../sass/interactive-map.scss */
+.jvectormap-tip .exhibit-data-wrapper {
+  padding: 5px;
+}
+/* line 12, ../sass/interactive-map.scss */
+.jvectormap-tip .exhibit-data-wrapper .exhibit__title {
+  text-align: center;
+  margin-top: 0;
+}
+/* line 17, ../sass/interactive-map.scss */
+.jvectormap-tip .exhibit-data-wrapper .exhibit__artist {
+  text-align: center;
+}

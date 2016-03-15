@@ -1,8 +1,136 @@
 $(document).ready(function() {
+	var exhibitsData = [
+							{exhibit: "Little Engineers", artist: "Atikah Razak, Lee Yee Hueh, Low Hui Xin Carissa, Phan Shi Yu, Wang WeiHeng", moduleCode: "NM4226", theme: "Identity", medium: "Play Area", imagePath: ""},
+							{exhibit: "Zi Heng", artist: "Zhai Rui, Lim Yen Siu, Jerlyn Ng Gelin, Tang Weishan, Samuel Tan Jiachi", moduleCode: "NM4883D", theme: "Identity", medium: "Youtube Video", imagePath: "same as featured artworks"},
+							{exhibit: "You've Got a Cat in Me", artist: "Abraham Chua, Chan Yu Qing, Chin Ying Jun, Linda Supardi, Philip Lee", moduleCode: "NM4883D", theme: "Identity", medium: "Video", imagePath: "NM4883D_YouveGotACatInMe-1.jpg"},
+							{exhibit: "Random Blends of Sound", artist: "", moduleCode: "NM4226", theme: "Identity", medium: "Sound Project", imagePath: ""},
+							{exhibit: "The Race", artist: "LiTing, Yan Ran, Nathaddeus, Darryl", moduleCode: "NM4227", theme: "Identity", medium: "Boardgame", imagePath: "NM4227_TheRace.jpg"},
+							{exhibit: "Marry lah", artist: "Xinni, Yuko, Jasmine, Joseph", moduleCode: "NM4227", theme: "Identity", medium: "Boardgame", imagePath: "NM4227_MarryLah.jpg"},
+							{exhibit: "The Looking Glass", artist: "Arumi Ho", moduleCode: "(Open call)", theme: "Identity", medium: "Portraits", imagePath: "Portrait 1.jpg"},
+							{exhibit: "Project Kintsugi", artist: "Cheryl Teh Tien Li, Cheryl Sekkappan, Lee Yee Hueh, Lisa Zhao, Xu Jinglan", moduleCode: "(Open call)", theme: "Identity", medium: "", imagePath: ""},
+							{exhibit: "Broken is beautiful", artist: "Hafiiz K", moduleCode: "(Open call)", theme: "Identity", medium: "Glitch art", imagePath: "Pair 1.jpg"},
+							{exhibit: "Moving up, Moving down", artist: "Alina Mak Sok Kuen", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "NM3223_MovingUpMovingDown-1.jpg"},
+							{exhibit: "My Neighborhood Moments", artist: "Yeo Qiao Yin", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "same as featured works"},
+							{exhibit: "In that moment, we were Infinite", artist: "Tay Yurong", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "NM3223_InThatMoment-1.jpg"},
+							{exhibit: "Lethargy", artist: "Arumi Ho", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "same as featured artworks"},
+							{exhibit: "Gym moments", artist: "Anton Tan", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "NM3223_GymMoments-1.jpg"},
+							{exhibit: "Vices", artist: "Carissa Low", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "NM3223_Vices-1.jpg"},
+							{exhibit: "Father and Son Moment", artist: "Tan Jia Yuan", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "NM3223_FatherAndSonMoment-1.jpg"},
+							{exhibit: "(be)COS(it’s)PLAY", artist: "Jolene Yap", moduleCode: "NM3223", theme: "Identity", medium: "Cinemagraph", imagePath: "NM3223_(be)COS(it’s)PLAY-1.jpg"},
+							{exhibit: "Waves of change", artist: "Beckie Liu", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_WavesOfChange-2.jpg"},
+							{exhibit: "Journey", artist: "Christie Han", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_Journey-1.jpg"},
+							{exhibit: "Struck Down, But Not Destroyed", artist: "Jocelyn Neo", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_StruckDownButNotDestroyed-1.jpg"},
+							{exhibit: "The Power Of Music", artist: "Michelle Ng", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_WhereWordsFail-1.jpg"},
+							{exhibit: "Grandma’s Story", artist: "Vincent Lim", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_GrandmasStory-1.jpg"},
+							{exhibit: "My Uncle's Wife", artist: "Joey Ng", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_MyUnclesWife-1.jpg"},
+							{exhibit: "Backstage!", artist: "Jolene", moduleCode: "(Open call)", theme: "Identity", medium: "Photojournal", imagePath: "Open_Backstage-1.jpg"},
+							{exhibit: "Pioneer Penny", artist: "Isabel Tan", moduleCode: "(Open call)", theme: "Identity", medium: "Photojournal", imagePath: "PP2.png"},
+							{exhibit: "Finding me", artist: "Alina Mak", moduleCode: "NM3230", theme: "Identity", medium: "Photojournal", imagePath: "NM3230_FindingMe.jpg"},
+							{exhibit: "The Path", artist: "Bao Xiao", moduleCode: "NM3228", theme: "Identity", medium: "Interactive Comic", imagePath: "NM3228_ThePath-1.gif"},
+							{exhibit: "Money doesn’t buy happiness!", artist: "Doris Sun", moduleCode: "NM3228", theme: "Identity", medium: "Interactive Comic", imagePath: "NM3228_MoneyDoesntBuyHappiness-1.jpg"},
+							{exhibit: "Love is what you want", artist: "Hafiiz K", moduleCode: "NM3228", theme: "Identity", medium: "Interactive Comic", imagePath: "same as featured works"},
+							{exhibit: "Outside looking in", artist: "Trena", moduleCode: "NM3228", theme: "Identity", medium: "Interactive Comic", imagePath: "NM3228_OutsideLookingIn-1.jpg"},
+							{exhibit: "Adventures of Baymax", artist: "Kway Li Ting, Lee Jia Ying Trena, Tan Ying Ling, Tomomi Hikawa", moduleCode: "NM3228", theme: "Identity", medium: "Webcomic", imagePath: "NM3228_AdventuresOfBaymax-1.jpg"},
+							{exhibit: "Alice in Wonderland (group 6)", artist: "See Wenhan, Lei Mingyu, Phan Shi Yu, Andrew Bryan Kilie", moduleCode: "NM3228", theme: "Identity", medium: "Webcomic", imagePath: "NM3228_Alice2-1.jpg"},
+							{exhibit: "I am", artist: "Pham Thanh Ha & Ting Yi Wei", moduleCode: "Graduate", theme: "Identity", medium: "Web page", imagePath: "Graduate_IAm-2.jpg"},
+							{exhibit: "Planet and Stars", artist: "Keith Chia", moduleCode: "NM2207", theme: "Progress", medium: "Mobile Game", imagePath: "same as featured works"},
+							{exhibit: "Flower Power", artist: "Alan Lin, Tan Shu Hua Jasmine, Wang Luhao", moduleCode: "NM4225", theme: "Progress", medium: "Video", imagePath: "NM4225_FlowerPower-1.jpg"},
+							{exhibit: "Frozen", artist: "Bao Xiao, Tan Hui Ling Rachel, Han Xin Jie Christie, Lim Su Fang Nicole", moduleCode: "NM3228", theme: "Progress", medium: "Webcomic", imagePath: "same as featured works"},
+							{exhibit: "Elections all over the world", artist: "Pang Huisy", moduleCode: "NM2220", theme: "Progress", medium: "Photo stories", imagePath: "Global-Elections-ver-2-1caczg1.jpeg"},
+							{exhibit: "Golden Quotes from General Elections 2015", artist: "Na Wen Lin", moduleCode: "NM2220", theme: "Progress", medium: "Photo stories", imagePath: "NM2220_GoldenQuotes-1.jpg"},
+							{exhibit: "In the queue to bid farewell to Lee Kuan Yew", artist: "Desmond Koh and Chen Xingyu", moduleCode: "NM2220", theme: "Progress", medium: "Photo stories", imagePath: "InTheQueueto.jpg"},
+							{exhibit: "Singaporeans bid farewell to founding father Lee", artist: "Desmond Koh and Lee Ken Kiat", moduleCode: "NM2220", theme: "Progress", medium: "Photo stories", imagePath: "SingaporeansBidFarewell.jpg"},
+							{exhibit: "Faces we pass", artist: "Chen Xingyu, Jeslyn Lerh, Lee Ken Kiat, Rachael Ho", moduleCode: "NM2220", theme: "Progress", medium: "Photo stories", imagePath: "faceswepass.jpg"},
+							{exhibit: "First-time voters share their hopes, worries ahead of polls", artist: "Jovina Ng and Lim Yen Siu", moduleCode: "NM2220", theme: "Progress", medium: "Photo stories", imagePath: "voters.jpg"},
+							{exhibit: "Remembering Lee Kuan Yew", artist: "Mak Wai Teng, Tan Yi Ting, Jacquelyn Soh", moduleCode: "NM3229", theme: "Progress", medium: "Infographic", imagePath: "FP01_Static Infographic.jpg"},
+							{exhibit: "Feelings about feelings", artist: "Erfi Azhar, Jerlyn Ng, Maciej Ziarkowski", moduleCode: "NM3229", theme: "Progress", medium: "Infographic", imagePath: "same as featured works"},
+							{exhibit: "Can MONEY buy us HAPPINESS?", artist: "Muhammad Junaidi Bin Abdul Wahid, Pamela Soh Min, Sharon Lim Ming Wei", moduleCode: "NM3229", theme: "Progress", medium: "Infographic ", imagePath: "FP12_Static.jpg"},
+							{exhibit: "Body Shop CSR", artist: "Eunice Wong and her team", moduleCode: "NM4207", theme: "Progress", medium: "CSR analysis", imagePath: "RB2016 - Eunice Wong (The Body Shop CFT).png"},
+							{exhibit: "Sentosa Development Corporation CSR", artist: "Deyi Tan and her team", moduleCode: "NM4207", theme: "Progress", medium: "CSR analysis", imagePath: "NM4207_SentosaGives-1.jpg"},
+							{exhibit: "NUS Museum campaign", artist: "Michelle Tan and her team", moduleCode: "NM4207", theme: "Progress", medium: "Campaign strategy", imagePath: "NM4207_NUSMuseum-1.jpg"},
+							{exhibit: "Centre for Quantum Technologies (CQT) campaign", artist: "Jindao Zhou and his team", moduleCode: "NM4207", theme: "Progress", medium: "Campaign strategy", imagePath: "NM4207_Quantumverse-1.jpg"},
+							{exhibit: "One United People", artist: "Andrew Bryan Kiflie", moduleCode: "NM3228", theme: "Progress", medium: "Comic", imagePath: "NM3228_OneUnitedPeople-1.png"},
+							{exhibit: "Worth", artist: "Justin Doan", moduleCode: "NM3228", theme: "Progress", medium: "Comic", imagePath: "NM3228_Worth-1.jpg"},
+							{exhibit: "Just one person", artist: "Nicole Lim Su Fang", moduleCode: "NM3228", theme: "Progress", medium: "Comic", imagePath: "NM3228_JustOnePerson.jpg"},
+							{exhibit: "Watch your step", artist: "Qiu Yunhan", moduleCode: "NM3228", theme: "Progress", medium: "Comic", imagePath: "NM3228_WatchYourStep.jpg"},
+							{exhibit: "Why wait for someone to help?", artist: "Rachel", moduleCode: "NM3228", theme: "Progress", medium: "Comic", imagePath: "NM3228_WhyWait.jpg"},
+							{exhibit: "Unplugged", artist: "See Wenhan", moduleCode: "NM3228", theme: "Progress", medium: "Comic", imagePath: "NM3228_Unplugged.jpg"},
+							{exhibit: "Construct, Destruct, Reconstruct", artist: "", moduleCode: "", theme: "Progress", medium: "Crane Workshop", imagePath: ""},
+							{exhibit: "Dark Side of Singapore", artist: "Alina Mak Sok Kuen, Anton Tan Kee Boon, Arumi Ho @ Arumi Naz Binte Mohd Zaid, Low Hui Xin Carissa, Tan Jia Yuan, Tay Yurong, Yap Fang Qi Jolene,Yeo Qiao Yin", moduleCode: "NM3223", theme: "Reality", medium: "Cinemagraph", imagePath: "NM3223_DarkSideOfSingapore-1.jpg"},
+							{exhibit: "Alice in Wonderland (group 1)", artist: "Abdul Hafiiz B Abdul Harim, Lin Fanshi, Oh Khee Hoon, Vincent Chong", moduleCode: "NM3228", theme: "Reality", medium: "Webcomic", imagePath: "NM3228_Alice1-1.jpg"},
+							{exhibit: "Bloodlust", artist: "Ang Yee Hong Dennis, Chen Xingyu, Kek Yan Rong, Ting Shi Min", moduleCode: "NM4209", theme: "Reality", medium: "Game", imagePath: "NM4209_Bloodlust-1.jpg"},
+							{exhibit: "Tap Tap Tap", artist: "Ang Yee Hong Dennis", moduleCode: "NM4209", theme: "Reality", medium: "Game", imagePath: "NM4209_TapTapTap-1.jpg"},
+							{exhibit: "Octazooka", artist: "Goutham Jayaraman", moduleCode: "NM4209", theme: "Reality", medium: "Game", imagePath: "NM4209_Octazooka-2.jpg"},
+							{exhibit: "Rebound", artist: "Goutham Jayaraman", moduleCode: "NM4209", theme: "Reality", medium: "Game", imagePath: "NM4209_Rebound-2.jpg"},
+							{exhibit: "Despairity", artist: "Chng Xinni, Khoo Jun Yang Rossen, Lim Ying Hao Vincent, Bettina", moduleCode: "NM4227", theme: "Reality", medium: "Game", imagePath: "same as featured artworks"},
+							{exhibit: "Battleship War", artist: "Benjamin Oh", moduleCode: "NM2207", theme: "Reality", medium: "Game", imagePath: "NM2207_BattleshipWar-4.jpg"},
+							{exhibit: "Running in the family", artist: "Sherlyn Goh Xue Ting", moduleCode: "NM2207", theme: "Reality", medium: "Game", imagePath: "NM2207_RunningInTheFamily-1.jpg"},
+							{exhibit: "Final breakthrough", artist: "Wang WeiHeng", moduleCode: "NM2207", theme: "Reality", medium: "Game", imagePath: "NM2207_FinalBreakthrough-3.jpg"},
+							{exhibit: "Mario's mushroom feast", artist: "Yeo Qiao Yin", moduleCode: "NM2207", theme: "Reality", medium: "Game", imagePath: "NM2207_MariosMushroomFeast-4.jpg"},
+							{exhibit: "Paintball Master Challenge", artist: "Alden", moduleCode: "NM2207", theme: "Reality", medium: "Game", imagePath: "NM2207_PaintballMasterChallenge-4.jpg"},
+							{exhibit: "RTS (no stars)", artist: "Khoo Jun Yang Rossen", moduleCode: "NM4209", theme: "Reality", medium: "Game", imagePath: "NM4209_RTS-2.jpg"},
+							{exhibit: "Tourist No Visa", artist: "Ang Yee Hong Dennis", moduleCode: "NM4209", theme: "Reality", medium: "Game", imagePath: "NM4209_TouristNoVisa.jpg"},
+							{exhibit: "Spectral: Whispers of the Past", artist: "Brandon Swee, Ho Shu Li, Lee Chuan Xin, Lim Yen Han", moduleCode: "NM3226", theme: "Reality", medium: "Mobile App", imagePath: "NM3226_Spectral-7.jpg"},
+							{exhibit: "Assisted Suicide Kit", artist: "Lee Chuan Xin, Sim Jiajin, Wei Jinjin Layla", moduleCode: "NM4225", theme: "Reality", medium: "Prototype", imagePath: "NM4225_AssistedSuicideKit-2.JPG"},
+							{exhibit: "Running after you", artist: "Liu Beckie, Chen Ying Cui, Low Xuan Yi, Nicole Ng, Leong Jia Rui", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_RunningAfterYou-1.jpg"},
+							{exhibit: "Closer Apart", artist: "Hor Ying Ying, Muhammad Adli Bin Mustapa, Tan Wei Long, Zhao Yingxue", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_CloserApart-1.jpg"},
+							{exhibit: "I have a willing heart", artist: "Keith Chia Wei Jie, Lim Yen Siu, Corrine Goh Mei Lian, Marcus Tan Chuan Ming, Jonathan Tan Zhi Yang", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_IHaveAWillingHeart-1.jpg"},
+							{exhibit: "Unspoken Words", artist: "Alina Mak, Alden Lim, Jia Siyao, Lee Ting Hui, Irene Cyrena", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_UnspokenWords-1.jpg"},
+							{exhibit: "Heart and Sole", artist: "Alina Mak, Alden Lim, Jia Siyao, Lee Ting Hui, Irene Cyrena", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_HeartAndSole-1.jpg"},
+							{exhibit: "0.5", artist: "Keith Chia Wei Jie, Lim Yen Siu, Corrine Goh Mei Lian, Marcus Tan Chuan Ming, Jonathan Tan Zhi Yang", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_1200-1.jpg"},
+							{exhibit: "Dance, Sleep, Repeat", artist: "Jovina Ng Shi Yun, Melissa Lee, Ng Hui Yi Nicole, Phua En-Lin Rachel, Saw Zhen Ling", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", imagePath: "NM3230_DanceSleepRepeat-1.jpg"},
+							{exhibit: "The Book Burner", artist: "Francisca Ann Tan", moduleCode: "NM3228", theme: "Reality", medium: "Comic", imagePath: "NM3223_TheBookBurner-1.jpg"},
+							{exhibit: "Infinite lifetimes", artist: "Li Ting", moduleCode: "NM3228", theme: "Reality", medium: "Interactive Comic", imagePath: "NM3228_InfiniteLifetimes-1.png"},
+							{exhibit: "A lonely fall", artist: "You Jing", moduleCode: "NM3228", theme: "Reality", medium: "Interactive Comic", imagePath: "NM3228_ALonelyFall-1.jpg"}
+						];
+
+	var generateHoverLabelFromTemplate = function(exhibitObject) {
+		var html = 	"<div class='exhibit-data-wrapper'>"+
+						"<h2 class='exhibit__title white-underline'>"+
+								exhibitObject.exhibit+
+						"</h2>"+
+						"<h4 class='exhibit__artist'>"+
+								"By: " + exhibitObject.artist+
+						"</h4>"+
+						"<h4 class='exhibit__module-code'>"+
+								"Module Code: " + exhibitObject.moduleCode+
+						"</h4>"+
+						"<h4 class='exhibit__theme'>"+
+								"Theme: " + exhibitObject.theme+
+						"</h4>"+
+						"<h4 class='exhibit__medium'>"+
+								"Medium: " + exhibitObject.medium+
+						"</h4>"+
+					"</div>";
+
+		return html;
+	}
+
+	var onRegionTipShow = function(event, label, code){
+		var mapObject = $('#interactive-map').vectorMap('get', 'mapObject')
+		var regionName = mapObject.getRegionName(code);
+		var hoverLabelRawHtml;
+		
+		var pattern = new RegExp("circle_[0-9][0-9]?_");
+		if (pattern.test(regionName)) {
+			// Extract number using regex
+			var exhibitNumber = regionName.match("[0-9][0-9]?");
+			// Get exhibit object
+			var exhibitObject = exhibitsData[exhibitNumber];
+			hoverLabelRawHtml = generateHoverLabelFromTemplate(exhibitObject);
+		} 
+
+
+		label.html(hoverLabelRawHtml);
+	}
+
+	
+
 	$('#interactive-map').vectorMap( {
 		map: 'rb-map',
 		// zoomMin: 3,
 		zoomOnScroll: false,
+		onRegionTipShow: onRegionTipShow,
 		regionStyle: {
 	      initial: {
 	        fill: '#B8E186'

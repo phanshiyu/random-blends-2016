@@ -1,0 +1,22 @@
+$default-font: 'Josefin Sans', serif !important;
+
+.jvectormap-tip {
+	height: auto !important;
+	// width: 100% !important;
+	// left: 0 !important;
+	border: 0 !important;
+	font-family: $default-font;
+
+	.exhibit-data-wrapper {
+		padding: 5px;
+		.exhibit__title {
+			text-align: center;
+			margin-top: 0;
+		}
+
+		.exhibit__artist {
+			text-align: center;
+		}
+
+	}
+}
