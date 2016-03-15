@@ -7,19 +7,25 @@
 /* line 10, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper {
   padding: 5px;
+  text-align: center;
 }
-/* line 12, ../sass/interactive-map.scss */
+/* line 13, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper .exhibit__title {
   text-align: center;
   margin-top: 0;
 }
-/* line 17, ../sass/interactive-map.scss */
+/* line 18, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper .exhibit__artist {
   text-align: center;
 }
+/* line 22, ../sass/interactive-map.scss */
+.jvectormap-tip .exhibit-data-wrapper h4 {
+  font-size: 1.1em;
+  margin: 2px;
+}
 
 @media screen and (max-width: 624px) {
-  /* line 25, ../sass/interactive-map.scss */
+  /* line 30, ../sass/interactive-map.scss */
   .jvectormap-tip {
     height: auto !important;
     width: 100% !important;
