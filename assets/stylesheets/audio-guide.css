@@ -1,0 +1,114 @@
+/* line 11, ../sass/audio-guide.scss */
+#audio-guide-wrapper {
+  display: block;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  height: 500px;
+  padding: 0;
+}
+/* line 18, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-image-wrapper {
+  position: relative;
+  background: url("../images/audio-guide.jpg") bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+/* line 30, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-image-wrapper p {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 30%;
+  text-align: left;
+  font-size: 1.1em;
+}
+/* line 41, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper {
+  background: -moz-linear-gradient(90deg, white 0%, #ece0ce 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ece0ce), color-stop(100%, white));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, white 0%, #ece0ce 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, white 0%, #ece0ce 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, white 0%, #ece0ce 100%);
+  /* ie10+ */
+  background: linear-gradient(0deg, white 0%, #ece0ce 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece0ce', endColorstr='#FFFFFF',GradientType=0 );
+  /* ie6-9 */
+  height: 200px;
+}
+/* line 52, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper input.middle:focus {
+  outline-width: 0;
+}
+/* line 56, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper .component-wrapper {
+  position: relative;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: auto;
+  width: 100%;
+}
+/* line 62, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper .component-wrapper #audio-guide-id-input {
+  vertical-align: middle;
+  display: inline-block;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-color: #d8e3f3;
+  font-size: 2em;
+  line-height: 2.3em;
+  text-align: center;
+  width: 120px;
+  height: 80px;
+}
+/* line 84, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper .component-wrapper #audio-guide-button {
+  vertical-align: middle;
+  display: inline-block;
+  background-color: #d8e3f3;
+  border: none;
+  border-radius: 17px;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  height: 50px;
+  width: 120px;
+  line-height: 30px;
+  font-size: 2em;
+}
+/* line 98, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper .component-wrapper h3 {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 420px) {
+  /* line 110, ../sass/audio-guide.scss */
+  #audio-guide-wrapper {
+    width: 420px;
+  }
+}

@@ -1,0 +1,113 @@
+@mixin transform($value) {
+	-webkit-transform: $value;
+	-moz-transform:    $value;
+	-ms-transform:     $value;
+	-o-transform:      $value;
+	transform:         $value;
+}
+
+$totalHeight: 500px;
+$heightOfBg: 300px;
+#audio-guide-wrapper {
+	display: block;
+	width: 100%;
+	margin: 0 auto 0 auto;
+	height: $totalHeight;
+	padding: 0;
+
+	#audio-guide-image-wrapper {
+		position: relative;
+		background: url('../images/audio-guide.jpg') bottom;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	
+		width: 100%;
+
+		height: $heightOfBg;
+
+		p {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			@include transform(translateY(-50%));
+			width: 30%;
+			text-align: left;
+			font-size: 1.1em;
+		}
+	}
+
+	#audio-guide-input-wrapper {
+		// position: relative;
+		background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,224,206,1) 100%); /* ff3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236,224,206,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+		background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,224,206,1) 100%); /* safari5.1+,chrome10+ */
+		background: -o-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,224,206,1) 100%); /* opera 11.10+ */
+		background: -ms-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,224,206,1) 100%); /* ie10+ */
+		background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(236,224,206,1) 100%); /* w3c */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece0ce', endColorstr='#FFFFFF',GradientType=0 ); /* ie6-9 */
+		height: $totalHeight - $heightOfBg;
+
+		input.middle:focus {
+		    outline-width: 0;
+		}
+
+		.component-wrapper {
+			position: relative;
+			top: 35%;
+			@include transform(translateY(-50%));
+			height: auto;
+			width: 100%;
+			#audio-guide-id-input {
+				vertical-align: middle;
+				display: inline-block;
+				outline: none;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+
+
+				border: none;
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				background-color: #d8e3f3;
+
+				font-size: 2em;
+				line-height: 2.3em;
+				text-align: center;
+				width: 120px;
+				height: 80px;
+			}
+
+			#audio-guide-button {
+				vertical-align: middle;
+				display: inline-block;
+				background-color: #d8e3f3;
+				border: none;
+
+				border-radius: 17px;
+				-moz-border-radius: 17px;
+				-webkit-border-radius: 17px;
+				height: 50px;
+				width: 120px;
+				line-height: 30px;
+				font-size: 2em;
+			}
+			h3 {
+				font-size: 1.2em;
+				text-align: center;
+				margin-top: 10px;
+			}
+		}
+		
+		
+	}
+}
+
+@media screen and (min-width: 420px) {
+	#audio-guide-wrapper {
+		width: 420px;
+	}
+}
