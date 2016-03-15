@@ -116,7 +116,7 @@ $(document).ready(function() {
 			// Extract number using regex
 			var exhibitNumber = regionName.match("[0-9][0-9]?");
 			// Get exhibit object
-			var exhibitObject = exhibitsData[exhibitNumber];
+			var exhibitObject = exhibitsData[exhibitNumber-1];
 			hoverLabelRawHtml = generateHoverLabelFromTemplate(exhibitObject);
 
 			label.html(hoverLabelRawHtml);
