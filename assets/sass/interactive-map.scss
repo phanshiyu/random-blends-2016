@@ -8,6 +8,7 @@ $default-font: 'Josefin Sans', serif !important;
 	font-family: $default-font;
 
 	.exhibit-data-wrapper {
+		position: relative;
 		padding: 5px;
 		text-align: center;
 		.exhibit__title {
@@ -23,6 +24,10 @@ $default-font: 'Josefin Sans', serif !important;
 			font-size: 1.1em;
 			margin: 2px;
 		}
+
+		.exhibit__image {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -31,5 +36,8 @@ $default-font: 'Josefin Sans', serif !important;
 		height: auto !important;
 		width: 100% !important;
 		left: 0 !important;
+		top: 12vh !important;
+		max-height: 60vh !important;
+		overflow-y: scroll !important; 
 	}
 }

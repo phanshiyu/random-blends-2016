@@ -6,29 +6,37 @@
 }
 /* line 10, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper {
+  position: relative;
   padding: 5px;
   text-align: center;
 }
-/* line 13, ../sass/interactive-map.scss */
+/* line 14, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper .exhibit__title {
   text-align: center;
   margin-top: 0;
 }
-/* line 18, ../sass/interactive-map.scss */
+/* line 19, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper .exhibit__artist {
   text-align: center;
 }
-/* line 22, ../sass/interactive-map.scss */
+/* line 23, ../sass/interactive-map.scss */
 .jvectormap-tip .exhibit-data-wrapper h4 {
   font-size: 1.1em;
   margin: 2px;
 }
+/* line 28, ../sass/interactive-map.scss */
+.jvectormap-tip .exhibit-data-wrapper .exhibit__image {
+  max-width: 100%;
+}
 
 @media screen and (max-width: 624px) {
-  /* line 30, ../sass/interactive-map.scss */
+  /* line 35, ../sass/interactive-map.scss */
   .jvectormap-tip {
     height: auto !important;
     width: 100% !important;
     left: 0 !important;
+    top: 12vh !important;
+    max-height: 60vh !important;
+    overflow-y: scroll !important;
   }
 }
