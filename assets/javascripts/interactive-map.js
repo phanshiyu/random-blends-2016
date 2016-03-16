@@ -89,7 +89,7 @@ $(document).ready(function() {
 	var generateHoverLabelFromTemplate = function(index, exhibitObject) {
 		var html = 	"<div class='exhibit-data-wrapper'>"+
 						"<h2 class='exhibit__title white-underline'>"+
-								exhibitObject.exhibit+
+								index + ". "+ exhibitObject.exhibit+
 						"</h2>"+
 						"<h4 class='exhibit__artist'>"+
 								"By: " + exhibitObject.artist+
@@ -116,6 +116,12 @@ $(document).ready(function() {
 		var regionName = mapObject.getRegionName(code);
 		var hoverLabelRawHtml;
 		
+		$('.jvectormap-region').each(function() {
+			if ($(this).attr('data-code') == regionName) {
+				$(this).attr("fill", "#FFFFFF");
+			}
+		})
+
 		var pattern = new RegExp("exhibit_[0-9][0-9]?");
 		if (pattern.test(regionName)) {
 			// Extract number using regex
