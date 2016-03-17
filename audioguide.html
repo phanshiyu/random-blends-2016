@@ -66,8 +66,24 @@
 			<button id="audio-guide-button" onclick="enterButtonOnClick();">Enter</button>
 			<h3>Input ID 1-10 to retrieve the sound</h3>
 		</div>
+		<h4 class="feedback"></h4>
 	</div>
 </article>
+
+<div id="audio-modal" class="modal fade" role="dialog">
+  	<div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      	<div class="modal-header">
+	        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	      	</div>
+	      	<div class="modal-body">
+		      	<h1 class="audio-title underline"></h1>
+		      	<div class="audio-clip-wrapper"></div>
+	      	</div>
+    	</div>
+  	</div>
+</div>
 
 <footer>
 	<div class="sponsors-wrapper">

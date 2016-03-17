@@ -105,9 +105,60 @@
   text-align: center;
   margin-top: 10px;
 }
+/* line 104, ../sass/audio-guide.scss */
+#audio-guide-wrapper #audio-guide-input-wrapper h4 {
+  width: 100%;
+  position: absolute;
+  font-size: 1.1em;
+  text-align: center;
+  color: red;
+  bottom: 35px;
+}
+
+/* line 115, ../sass/audio-guide.scss */
+.modal-header {
+  border: none;
+  padding: 5px 15px 5px 15px;
+}
+
+/* line 120, ../sass/audio-guide.scss */
+.modal-body {
+  padding-top: 0;
+  border: none;
+}
+/* line 122, ../sass/audio-guide.scss */
+.modal-body h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* line 128, ../sass/audio-guide.scss */
+.modal-body img {
+  width: 300px;
+}
+/* line 131, ../sass/audio-guide.scss */
+.modal-body p {
+  text-align: left;
+  margin-top: 5px;
+}
+
+/* line 137, ../sass/audio-guide.scss */
+.modal-footer {
+  border: none;
+}
+
+/* line 141, ../sass/audio-guide.scss */
+.audio-clip-wrapper {
+  margin-top: 30px;
+  width: 100%;
+}
+/* line 143, ../sass/audio-guide.scss */
+.audio-clip-wrapper audio {
+  width: 100%;
+}
 
 @media screen and (min-width: 420px) {
-  /* line 110, ../sass/audio-guide.scss */
+  /* line 150, ../sass/audio-guide.scss */
   #audio-guide-wrapper {
     width: 420px;
   }

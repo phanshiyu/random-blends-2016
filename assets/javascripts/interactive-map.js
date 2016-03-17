@@ -79,7 +79,7 @@ $(document).ready(function() {
 							{exhibit: "I have a willing heart", artist: "Keith Chia, Lim Yen Siu, Corrine Goh, Marcus Tan, Jonathan Tan", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", fileFormat: ".jpg"},
 							{exhibit: "Unspoken Words", artist: "Alina Mak, Alden Lim, Jia Siyao, Lee Ting Hui, Irene Cyrena", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", fileFormat: ".jpg"},
 							{exhibit: "Heart and Sole", artist: "Alina Mak, Alden Lim, Jia Siyao, Lee Ting Hui, Irene Cyrena", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", fileFormat: ".jpg"},
-							{exhibit: "0.5", artist: "Keith Chia, Lim Yen Siu, Corrine Goh, Marcus Tan, Jonathan Tan", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", fileFormat: ".jpg"},
+							{exhibit: "12:00", artist: "Keith Chia, Lim Yen Siu, Corrine Goh, Marcus Tan, Jonathan Tan", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", fileFormat: ".jpg"},
 							{exhibit: "Dance, Sleep, Repeat", artist: "Jovina Ng, Melissa Lee, Nicole Ng, Rachel Phua, Saw Zhen Ling", moduleCode: "NM3230", theme: "Reality", medium: "Youtube Video", fileFormat: ".jpg"},
 							{exhibit: "The Book Burner", artist: "Francisca Ann Tan", moduleCode: "NM3228", theme: "Reality", medium: "Comic", fileFormat: ".jpg"},
 							{exhibit: "Infinite lifetimes", artist: "Kway Li Ting", moduleCode: "NM3228", theme: "Reality", medium: "Interactive Comic", fileFormat: ".png"},
@@ -116,14 +116,15 @@ $(document).ready(function() {
 		var regionName = mapObject.getRegionName(code);
 		var hoverLabelRawHtml;
 		
-		$('.jvectormap-region').each(function() {
-			if ($(this).attr('data-code') == regionName) {
-				$(this).attr("fill", "#FFFFFF");
-			}
-		})
+		
 
 		var pattern = new RegExp("exhibit_[0-9][0-9]?");
 		if (pattern.test(regionName)) {
+			$('.jvectormap-region').each(function() {
+				if ($(this).attr('data-code') == regionName) {
+					$(this).attr("fill", "#FFFFFF");
+				}
+			})
 			// Extract number using regex
 			var exhibitNumber = regionName.match("[0-9][0-9]?");
 			// Get exhibit object
