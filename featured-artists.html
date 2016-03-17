@@ -13,6 +13,8 @@
 <!-- Our Stylesheets -->
 <link rel="stylesheet" href="assets/stylesheets/main.css" type='text/css'>
 <link rel="stylesheet" href="assets/stylesheets/featured-artists.css" type='text/css'>
+<link rel="stylesheet" href="assets/stylesheets/featured-artworks.css" type='text/css'>
+<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
 
 <!-- JQuery -->
 <script src="assets/javascripts/jquery-2.2.1.min.js"></script>
@@ -55,9 +57,8 @@
 
 <!-- START HERE -->
 
-<article id="Featured-Artist" class="site-content-block"> 
-
-	<h2 class="header-font site-content-block-title underline">Featured Artists</h2>
+<!-- <article id="Featured-Artist" class="site-content-block"> 
+	
 	<div class="site-large-wrapper">
 		<div class="site-large-image-wrapper">
 			<img src="./assets/images/bao-xiao.jpg">
@@ -71,16 +72,17 @@
 		<p>In this interview, Bao Xiao talks about how he makes the best Xiao Long Bao. HAHA</p>
 	</div>
 
-</article> 
+</article>  -->
 
-<article id="Featured-Artist-2" class="site-content-block"> 
+<!-- <article id="Featured-Artist-2" class="site-content-block"> 
 
+	<h2 class="header-font site-content-block-title underline">Featured Artists</h2>
 	<div class="site-large-wrapper">
 		<div class="site-large-image-wrapper">
 			<img src="./assets/images/hafiz.jpg">
 		</div>
 		<h3 class="header-font">Hafiiz</h3>
-		<p>Yo yo. I'm Hafiiz with a double ii</p>
+		<p>Abdul Hafiiz (double 'i') Bin Abdul Karim is a Year 3 Communications and New Media major from NUS. Living by the motto “I live to create, and I create to live,” Hafiiz finds joy in producing works of art, be they for school, personal fulfilment or as a pastime.</p>
 	</div>
 
 	<div class="site-large-wrapper">
@@ -88,19 +90,130 @@
 		<p>In this interview, Hafiiz talks about how he can't eat Xiao Long Bao, because tak halal siol</p>
 	</div>
 
-</article> 
+</article>  -->
+
+<article id="featured-artworks" class="site-content-block">
+	<h2 class="header-font site-content-block-title underline">Featured Artists</h2>
+
+	<div class="featured-artwork-block">
+		<div class="featured-artwork__square">
+			<div class="featured-artwork__content-wrapper">
+				<h2 class="featured-artwork__title underline">Hafiiz</h2>
+				<p class="featured-artwork__description">Abdul Hafiiz (double 'i') Bin Abdul Karim is a Year 3 Communications and New Media major from NUS. Living by the motto “I live to create, and I create to live,” Hafiiz finds joy in producing works of art, be they for school, personal fulfilment or as a pastime.</p>
+				<button data-toggle="modal" data-target="#zi-heng-modal" class="site-default-button">Read Interview</button>
+			</div>
+		</div>
+		<!-- <div class="featured-artwork__square featured-artwork__image">
+			<img src="./assets/images/hafiz.jpg">
+		</div>
+ -->
+		<div class="featured-artwork__square featured-artwork__image">
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/QqCMUknoQh4" frameborder="0" allowfullscreen></iframe>
+		</div>
 
 
+		<!-- Modal -->
+		<div id="zi-heng-modal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body">
+		        	<img src="./assets/images/hafiz.jpg">
+		        	<h4><b>When did you started devoting yourself to art? How long has it been?</b></h4>
+		        	<p>I wouldn't say that I'm devoted to art actually. I'm compelled to make art. I started feeling a connection to art when I was about 18. But don't get me wrong, I have been making art since Art & Craft lessons in primary school and I loved it. But until I was 18, I hadn't possibly believed that art could sustain me the way that it has helped me till now, emotionally. But I’d started using art to express myself because that was the only outlet for me at that time. Let's just say, it just snowballed from then on.</p>
+		        	<h4><b>What is the style of your work and what kind of artworks do you make?</b></h4>
+		        	<p>I would say that my work is deeply confessional and emotionally charged. I don't make pretty works. That's not my kind of art and that's not why I make art.</p>
+		        	<h4><b>What are the exhibitions you have participated in?</b></h4>
+		        	<p>This the first time my work is being showcased in an exhibition. Hahaha, quite sad ah?</p>
+		        	<h4><b>How many artworks have you produced up till now?</b></h4>
+		        	<p>Based on my Instagram account, over 500 pieces. But I'm sure there's more that I threw away, hahaha!</p>
+		        	<h4><b>What are some of your greatest achievements in this process?</b></h4>
+		        	<p>The fact that I can experiment and try out new techniques makes the process of creativity valuable to me. I'm not an art student, so whenever I'm experimenting, I'm also learning what works and what doesn't. I've used a combination of ink and bleach to paint before and the effects were beautiful. I also feel that by repeating and committing to making works, I get to develop a certain language in art that is mine. It might not look good to others, but it's mine.</p>
+		        	<h4><b>What are some failures you’ve experienced in the process?</b></h4>
+		        	<p>There was a point in time when I was making junk work; works that I cannot even justify to myself. And I was feeling so down on myself, so one day I decided to just tear up all of the works that I can't feel a connection with. There's no reason for me to keep works that have no meaning to me. It's just contributing more rubbish to the world.</p>
+		        	<h4><b>What’s your take on the future (contemporary) arts scene of Singapore?</b></h4>
+		        	<p>I don't think I am qualified to give a prediction on the contemporary art scene. But, I really hope that people will have more time to create works with integrity, and without censoring themselves. The works have got to have some feeling attached to it by the artists.</p>
+		        	<h4><b>What is the relevance of arts in today’s society? Do you care?</b></h4>
+		        	<p>Haha of course I care! Because I know for a fact that art saved my life... my soul. I know that art is a cathartic thing for people whether they make it or not. And I want people to pause and experience that. On a micro level, I think the arts is an important creative outlet for people to just let go and establish their sense of self. Then, as we go out to the societal level, the arts is also a good way to communicate a different culture. That's the beauty of it. The arts and culture should be the soul of the country.</p>
+		        	<h4><b>What are your aspirations?</b></h4>
+		        	<p>Argh, I really hate this question because whatever I do is important to me right now. People tend to neglect the present and they forget to live in the moment because they're so caught up with what they want to achieve in the distant future. But if I think about it hard enough, I would say that I want to make works that can make people think and be more empathetic. Be it art or not, I love a good dialogue and a two-way communication between my work and others. As long as I can push the envelope in my exploration of human emotions, I think it's a good way forward, right? Hahaha!</p>
+		        	<h4><b>Share your inspiration and thought-process in producing ‘Love is what you want’.</b></h4>
+		        	<p>The theme for the assignment was "A lonely path" and it was almost an instantaneous decision for me to create something that is close to my heart. So, "Love is what you want" is basically me having a dialogue with myself and exploring the notion of love because I've yet to believe in the existence of love. I love my mum, my friends my family but those are platonic love which is built on another reasoning. What I'm talking about is the passionate love for another person. I don't think that exist for me at all for now. To do that, I decided to create an intimate place within the web (sort of using the web as a canvas) and tell an emotional narrative. I didn't want the story to be solely about me because love is an emotion and emotion is a universal concept. Hence, the work starts with me and it spread out to other people. The figurative works and the words were made abstract and direct so people can relate to them. But I also didn't want to create another sob story, so I made sure the ending is a happy ending; something I hope for in the future.</p>
+		        	<h4><b>Share some interesting anecdotes with us.</b></h4>
+		        	<p>There was once I slept along a street of Geylang for 5 hours and had people writing their thoughts and feelings around me... and I called it art! Ok for the background story, I was actually interning at an art gallery and we were supposed to be part of this “World Parking Day”. Organisers of the event requested to have a public art work. So, I guess I was a bit impulsive and bold. Hahaha! Luckily, my mum was there to keep an eye out for me. I felt super vulnerable there lah! But, it was such an enriching experience, even though I wasn't moving for 5 whole hours.</p>
+		        	<img src="./assets/images/hafiiz-2.jpg">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+<!-- Second Artist  -->
+
+	<div class="featured-artwork-block">
+		<div class="featured-artwork__square">
+			<div class="featured-artwork__content-wrapper">
+				<h2 class="featured-artwork__title underline">Despairity Team</h2>
+				<p class="featured-artwork__description">Despairity is a Clicker game in which the player plays the role of a child who has to juggle work and school. At the same time, the player competes with another child, Richard who comes from a wealthy family. The player will aim to achieve the highest score before time runs out.</p>
+				<button data-toggle="modal" data-target="#planets-modal" class="site-default-button">Read Interview</button>
+			</div>
+		</div>
+		<div class="featured-artwork__square featured-artwork__image">
+			<img src="./assets/images/despairity.jpg">
+		</div>
+
+		<!-- Modal -->
+		<div id="planets-modal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      </div>
+		      <div class="modal-body">
+		      	<h1 class="underline">Despairity Team</h1>
+		        <img src="./assets/images/featured-artworks-thumbnails/despairity.jpg">
+		        	<h4><b>What are some greatest achievements in the process of making the game?</b></h4>
+		        	<p>When we first playtested our game, we received extremely positive responses. It spurred on the competitive spirit of some playtesters as they kept trying to beat Richard, which was the most challenging segment in our game. </br></br>
+					The best part was during the final playtesting session - the playtesters decided to plug in a second mouse and make it a “multiplayer game” so as to win Richard more easily. It was a really interesting experience to see how the game can be played in different ways.
+					<h4><b>What are some failures in the process?</b></h4>
+		        	<p>Initially, there was some miscommunication as the designer did not know how to write a design document for the programmer. We ended up undergoing multiple edits, which delayed the game implementation. Fortunately, we managed to complete the prototype in time for play-testing and fine tuning of the mechanics.</p>
+		        	<h4><b>What’s your take about the future (contemporary) arts scene of Singapore?</b></h4>
+		        	<p>We like that the government has been increasing funds to promote cultural arts in Singapore. Singapore is a beautiful place with vibrant culture and breathtaking architecture - we believe that such support will give our talented local artists more exposure and encourage them to continue doing what they love, and promote our unique heritage together.</p>
+		        	<h4><b>What is the relevance of arts in today’s society? Do you care?</b></h4>
+		        	<p>We feel that art evokes meanings that are interpreted differently  by everyone. Through our project, one of the messages that we wished to highlight was the individuality of perspectives - we wanted people to step into the shoes of the poorer student to experience a life of undesirable socio-economic status. Contrary to our expectations, there were vastly contrasting viewpoints amongst people who played our game. This reflected that every individual shares different perspectives due to our personal life experiences. As they were brought up in different circumstances, our players had diverging ideas on how our society works. To us, this is the beauty of art, and why we should care - with every social issue, the diversity of perspectives amongst individuals from all walks of life is what we hope would promote an active discourse in all spheres of society.</p>
+		        	<h4><b>Share your inspiration and thought-process in producing ‘Despairity’.</b></h4>
+		        	<p>The theme provided to us was “Apart”. We decided to create a simple game mechanic with a theme that can resonate with our players. Initially, we had some whacky ideas, such as a “Papers, please” version of a HR manager in the civil sector who hires based on mere qualifications, or one in which the player plays a knight who tries to save a princess amid obstacles thrown by a dragon - only to find out that the princess and the dragon were in cahoots to stop the knight as he wasn’t “good enough” for her. One of us suggested creating some sort of social commentary on our education system, and follow up with the recent debate over the relationship between family background and access to resources. We felt that it was a really good idea and thus stuck with it ever since.
+		        	</br></br>
+					We used Cookie Clicker as the design basis for our game, which was supposed to be almost identical to Cookie Clicker whereby players would have to initially work for their resources, until they have amassed a decent amount to pass the work to the AI. However, we later felt that this could hardly bring out the idea of “unfair advantage”. We decided to switch our idea to one that forces the player to constantly click throughout the game, as we hope that it would allow the players to not only metaphorically, but also physically experience the pain and difficulty of a child from a poor financial background, while they try to compete with another individual who has a more affluent status.  </p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+</article>
 
 
 
 <footer>
 	<div class="sponsors-wrapper">
 		<h2 class="header-font">PROUDLY PRESENTED BY:</h2>
+		<div class="cnm-image-wrapper">
+			<img src="./assets/images/nus-cnm-logo.png" class="cnm-logo">
+		</div>
+		<h2 class="header-font">VENUE SPONSOR:</h2>
 		<div class="sponsors-image-wrapper">
-			<img src="./assets/images/rb-logo.png" class="site-sponsor-logo">
-			<img src="./assets/images/nus-cnm-logo.png" class="site-sponsor-logo">
-			<img src="./assets/images/asm-logo.png" class="site-sponsor-logo">
+			<img src="./assets/images/asm-logo.png" class="asm-logo">
+		</div>
+		<h2 class="header-font">OFFICIAL PROJECTOR SPONSOR:</h2>
+		<div class="sponsors-image-wrapper">
+			<img src="./assets/images/epson-logo.jpg" class="epson-logo">
 		</div>
 	</div>
 </footer>
