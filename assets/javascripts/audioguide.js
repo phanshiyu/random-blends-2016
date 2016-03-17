@@ -31,7 +31,8 @@ var enterButtonOnClick = function() {
 
 		// Attach audio clip
 		var pathToAudioClip = "assets/audio-tour-clips/" + inputValue + ".mp3";
-		var audioClipElement = $('<audio controls></audio>');
+		var audioClipElement = $('<audio controls></audio>')
+								.attr('id', 'audio-clip'); 
 		var audioClipSource = $('<source></source>')
 								.attr('src', pathToAudioClip);
 		audioClipElement.append(audioClipSource);
@@ -44,3 +45,15 @@ var enterButtonOnClick = function() {
 		// Nothing is retrieved, we have to feedback to the user.
 	}
 };
+
+$(document).ready(function() {
+	$('#close-button').click(function() {
+		var ply = document.getElementById('audio-clip');
+		ply.src = "";
+	});
+
+	$('#audio-modal').on('hidden.bs.modal', function () {
+  		var ply = document.getElementById('audio-clip');
+		ply.src = "";
+	})
+});
