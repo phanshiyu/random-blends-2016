@@ -14,6 +14,9 @@ var audioGuideData = {
 var enterButtonOnClick = function() {
 	// We retrieve the input value
 	var inputValue = $('#audio-guide-id-input').val();
+	if (inputValue.length == 1) {
+		inputValue = "0" + inputValue;
+	}
 	$('#audio-guide-id-input').val('');
 	// Using the input Value to as a key to retrieve the relevant data from the hash map
 	var audioData = audioGuideData[inputValue];
