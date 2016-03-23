@@ -132,8 +132,8 @@ a {
   display: inline-block;
   color: white;
   transition: all 1s ease;
-  padding: 0px 20px 0px 20px;
-  margin: 15px auto 15px auto;
+  padding: 0px 10px 0px 10px;
+  margin: 10px auto 10px auto;
   border-left: 1px solid #92a9ac;
 }
 /* line 156, ../sass/main.scss */

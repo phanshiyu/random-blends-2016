@@ -43,6 +43,14 @@ $(document).ready(function() {
 	    	mouseleave: function () {
 	        	var className = $(this).attr('class').split(' ')[0];
 	        	$('.' + className).removeClass('hover');
+	    	},
+	    	click: function() {
+	    		oriDomi.foldUp(function() {
+					setTimeout(function(){
+			    		menuWrapper.hide();
+						siteMenuExpandButton.fadeIn(200);
+					}, 500);
+				});
 	    	}
 		});
 	});
