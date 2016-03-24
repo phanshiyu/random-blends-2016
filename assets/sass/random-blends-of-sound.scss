@@ -2,6 +2,8 @@ h2 {
 	margin-bottom: 3px;
 }
 .audio-wrapper {
+	top: 50%;
+	transform: translateY(-50%);
 	position: relative;
 	top: 25vh;
 }

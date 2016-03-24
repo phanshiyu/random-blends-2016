@@ -5,11 +5,13 @@ h2 {
 
 /* line 4, ../sass/random-blends-of-sound.scss */
 .audio-wrapper {
+  top: 50%;
+  transform: translateY(-50%);
   position: relative;
   top: 25vh;
 }
 
-/* line 9, ../sass/random-blends-of-sound.scss */
+/* line 11, ../sass/random-blends-of-sound.scss */
 #random-blends-of-sound-wrapper {
   background: url("../images/header-pic-small.jpg") center;
   background-size: cover;
@@ -20,7 +22,7 @@ h2 {
   height: 500px;
 }
 
-/* line 18, ../sass/random-blends-of-sound.scss */
+/* line 20, ../sass/random-blends-of-sound.scss */
 #random-blends-of-sound-wrapper {
   background: url("../images/header-pic-small.jpg") center;
   background-size: cover;
@@ -31,7 +33,7 @@ h2 {
   height: 500px;
 }
 
-/* line 28, ../sass/random-blends-of-sound.scss */
+/* line 30, ../sass/random-blends-of-sound.scss */
 body {
   background-color: white;
 }
