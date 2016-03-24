@@ -1,0 +1,37 @@
+/* line 1, ../sass/random-blends-of-sound.scss */
+h2 {
+  margin-bottom: 3px;
+}
+
+/* line 4, ../sass/random-blends-of-sound.scss */
+.audio-wrapper {
+  position: relative;
+  top: 25vh;
+}
+
+/* line 9, ../sass/random-blends-of-sound.scss */
+#random-blends-of-sound-wrapper {
+  background: url("../images/header-pic-small.jpg") center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+/* line 18, ../sass/random-blends-of-sound.scss */
+#random-blends-of-sound-wrapper {
+  background: url("../images/header-pic-small.jpg") center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+/* line 28, ../sass/random-blends-of-sound.scss */
+body {
+  background-color: white;
+}
