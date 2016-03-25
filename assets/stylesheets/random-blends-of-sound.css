@@ -25,6 +25,7 @@ h2 {
   -o-background-size: cover;
   background-size: cover;
   height: 500px;
+  padding-top: 40px;
 }
 
 /* line 20, ../sass/random-blends-of-sound.scss */
