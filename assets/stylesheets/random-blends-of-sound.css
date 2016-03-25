@@ -9,6 +9,8 @@ h2 {
   transform: translateY(-50%);
   position: relative;
   top: 25vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 /* line 11, ../sass/random-blends-of-sound.scss */
@@ -36,4 +38,8 @@ h2 {
 /* line 30, ../sass/random-blends-of-sound.scss */
 body {
   background-color: white;
+}
+
+audio {
+  margin-bottom: 30px;
 }
