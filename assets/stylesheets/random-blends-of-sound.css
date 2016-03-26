@@ -8,7 +8,7 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
-  top: 25vh;
+  top: 40vh;
 }
 
 .audio-wrapper p {
@@ -24,7 +24,7 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 500px;
+  height: 700px;
   padding-top: 40px;
 }
 
@@ -36,7 +36,7 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 500px;
+  height: 700px;
 }
 
 /* line 30, ../sass/random-blends-of-sound.scss */
